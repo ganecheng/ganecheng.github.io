@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+<body>
+	<video id="video" autoplay="autoplay" style='width: 640px; height: 480px'></video>
+	<button id='picture'>PICTURE</button>
+	<canvas id="canvas" width="640" height="480"></canvas>
+
+	<script type="text/javascript">
+		var video = document.getElementById("video");
+		var context = canvas.getContext("2d");
+		var errocb = function(code)
+		{
+			console.log(code);
+		};
+		if (navigator.getUserMedia)
+		{ // 标准的API
+			navigator.getUserMedia(
+			{
+				"video" : true
+			}, function(stream)
+			{
+				video.src = stream;
+				video.play();
+			}, errocb);
+		}
+		else if (navigator.webkitGetUserMedia)
+		{ // WebKit 核心的API
+
+			console.log(navigator.webkitGetUserMedia);
+			navigator.webkitGetUserMedia(
+			{
+				"video" : true
+			}, function(stream)
+			{
+
+				video.src = window.webkitURL.createObjectURL(stream);
+				video.play();
+			}, errocb);
+
+		}
+		//    将拍好的照片显示在画布上
+		document.getElementById("picture").addEventListener("click", function()
+		{
+			context.drawImage(video, 0, 0, 640, 480);
+		});
+	</script>
+</body>
+</html>
