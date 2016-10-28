@@ -1,0 +1,105 @@
+/**************************
+ PLUGIN CSS CUSTOMIZATIONS 
+**************************/
+
+/***
+SlimScrollBar plugins css changes
+***/
+.scroller {
+  padding: 0px ;
+  margin: 0px ;
+  padding-right: 12px ;
+  overflow: hidden;
+}
+
+.scroller-footer {
+  margin-top: 10px;
+}
+
+.scroller-footer:after,
+.scroller-footer:before {
+  content: "";
+  display: table;
+  line-height: 0;
+}
+
+.scroller-footer:after {
+  clear: both;
+}
+
+.portlet-body .slimScrollBar {
+  margin-right: 0px ;
+}
+
+
+
+/***
+Bootstrap Datepaginator
+***/
+.datepaginator a {
+  font-family: 'Open Sans';
+  font-size: 13px;
+  font-weight: 300;
+}
+
+.datepicker .today {
+  background-image: none !important;
+  filter: none !important;
+}
+
+#dp-calendar {
+  right: 4px !important;
+}
+
+/***
+Font Awesome 4.0 Demo
+***/
+.fa-item {
+  font-size: 14px;
+  padding: 10px 10px 10px 20px;
+}
+
+.fa-item i {
+  font-size: 16px;
+  display: inline-block;
+  width: 20px;
+}
+
+.fa-item:hover {
+  cursor: pointer;
+  background: #eee;  
+}
+
+/***
+Pace - Page Progress
+***/
+
+.pace .pace-progress {
+  z-index: 10000;
+  top: 40px;
+  height: 2px;
+}
+
+.pace .pace-progress-inner {
+  box-shadow: none;
+}
+
+.pace .pace-activity {
+  top: 44px;
+  right: 22px;
+  border-radius: 10px !important;
+}
+
+
+@media (max-width: 480px) { 
+
+  .page-header-fixed .pace .pace-progress {
+    top: 82px;
+  }
+
+  .page-header-fixed .pace .pace-activity {
+    top: 88px;
+    right: 15px;
+  }
+
+}
