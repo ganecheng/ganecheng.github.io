@@ -2608,3 +2608,7 @@ h1 {
     background-color: #f9fdfa !important;
     font-family: Consolas;
 }
+
+code{
+	font-family: Consolas !important;
+}
