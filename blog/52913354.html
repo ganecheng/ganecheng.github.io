@@ -28,6 +28,7 @@
 <link href="http://7xj7hx.com1.z0.glb.clouddn.com/assets/css/themes/light.css" rel="stylesheet" type="text/css" id="style_color" />
 <link href="https://cdn.bootcss.com/zTree.v3/3.5.24/css/zTreeStyle/zTreeStyle.min.css" rel="stylesheet" type="text/css">
 <link href="http://7xj7hx.com1.z0.glb.clouddn.com/css/marxico.css" rel="stylesheet"></link>
+<link href="https://cdn.bootcss.com/highlight.js/9.7.0/styles/vs.min.css" rel="stylesheet"></link>
 
 <!-- END THEME STYLES -->
 <link rel="shortcut icon" href="http://avatar.csdn.net/3/3/3/1_gane_cheng.jpg" />
@@ -235,7 +236,7 @@
 				//设置Markdown文章内容
 				$("#MainArticleDiv").html(marked(data));
 				//设置代码高亮显示
-				$("pre").addClass("hljs-dark");
+				$("pre").addClass("hljs");
 				$('pre code').each(function(i, block)
 				{
 					hljs.highlightBlock(block);
