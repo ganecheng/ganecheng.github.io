@@ -1,13 +1,15 @@
+
+
 <!DOCTYPE html>
 <!--[if IE 8]> <html lang="en" class="ie8 no-js"> <![endif]-->
 <!--[if IE 9]> <html lang="en" class="ie9 no-js"> <![endif]-->
 <!--[if !IE]><!-->
-<html lang="en" class="no-js">
+<html lang="zh" class="no-js">
 <!--<![endif]-->
 <!-- BEGIN HEAD -->
 <head>
 <meta charset="utf-8" />
-<title> 利用朴素贝叶斯模型识别垃圾邮件 | Gane Cheng</title>
+<title>利用朴素贝叶斯模型识别垃圾邮件|GaneCheng</title>
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta content="width=device-width, initial-scale=1.0" name="viewport" />
 <meta content="" name="Gane Cheng" />
@@ -54,7 +56,7 @@
 			<ul class="nav navbar-nav pull-right">
 				<!-- BEGIN TODO DROPDOWN -->
 				<li class="dropdown" id="header_task_bar">
-					<a href="javascript:void(0)">
+					<a href="http://www.ganecheng.tech/blog_list.html">
 						<i class="fa fa-tasks"></i> 博客
 					</a>
 				</li>
@@ -104,15 +106,15 @@
 			<div class="page-content">
 				<!-- BEGIN PAGE HEADER-->
 				<div class="width-1020-center">
-					<h1> 利用朴素贝叶斯模型识别垃圾邮件</h1>
+					<h1>利用朴素贝叶斯模型识别垃圾邮件</h1>
 					<ul class="page-breadcrumb breadcrumb">
 						<li>
 							<i class="fa fa-home"></i>
-							<a href="index.html"> 首页 </a>
+							<a href="http://www.ganecheng.tech/blog_list.html"> 首页 </a>
 							<i class="fa fa-angle-right"></i>
 						</li>
 						<li>
-							<a href="javascript:void(0)"> 博客 </a>
+							<a href="http://www.ganecheng.tech/blog_list.html"> 博客 </a>
 							<i class="fa fa-angle-right"></i>
 						</li>
 						<li>
@@ -125,32 +127,40 @@
 				<!-- BEGIN PAGE CONTENT-->
 				<div class="blog-page">
 					<div class="width-1020-center">
-						<!-- <div class="blog-tag-data">
+						<div class="blog-tag-data">
 							<div class="row">
 								<div class="col-md-6">
 									<ul class="list-inline blog-tags">
 										<li>
-											<i class="fa fa-tags"></i>
-											<a href="javascript:void(0)"> Technology </a>
-											<a href="javascript:void(0)"> Education </a>
-											<a href="javascript:void(0)"> Internet </a>
+											<i class="fa fa-list-ul"></i>
+											<a target="_blank" href="http://blog.csdn.net/gane_cheng/article/category/6528834"> AI-ML-DL </a>
 										</li>
+										
+											<li>
+												<i class="fa fa-tags"></i>
+												
+													<a href="javascript:void(0)"> 分类算法 </a>
+												
+											</li>
+										
 									</ul>
 								</div>
 								<div class="col-md-6 blog-tag-data-inner">
 									<ul class="list-inline">
 										<li>
-											<i class="fa fa-calendar"></i>
-											<a href="javascript:void(0)"> April 16, 2013 </a>
+											<i class="fa fa-calendar"></i> <a href="javascript:void(0)"> 2016-11-19 11:54 </a>
+										</li>
+										<li>
+											<i class="fa fa-eye"></i> <a href="javascript:void(0)"> 阅读(138) </a>
 										</li>
 										<li>
 											<i class="fa fa-comments"></i>
-											<a href="javascript:void(0)"> 38 Comments </a>
+											<a target="_blank" href="http://blog.csdn.net/gane_cheng/article/details/53219332#comments"> 评论(0) </a>
 										</li>
 									</ul>
 								</div>
 							</div>
-						</div> -->
+						</div>
 						<div>
 							<div id="MainArticleDiv" style="margin: 10px 0px;">
 								<img class="center-block" width="80" src="http://7xj7hx.com1.z0.glb.clouddn.com/svg/puff.svg">
@@ -231,7 +241,7 @@
 	<script type="text/javascript">
 		$(function()
 		{
-	
+
 			$.get("http://7xj7hx.com1.z0.glb.clouddn.com/md/53219332.md", function(data)
 			{
 				//设置Markdown文章内容
@@ -259,13 +269,13 @@
 					}
 				});
 				$('#tree').show();
-				
-				$.getScript("https://cdn.bootcss.com/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML",function()
+
+				$.getScript("https://cdn.bootcss.com/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML", function()
 				{
 					setTimeout(function()
 					{
-						$(".MathJax").css("font-size","18px");
-					}, 2000 )
+						$(".MathJax").css("font-size", "18px");
+					}, 2000)
 				});
 
 			});
@@ -273,7 +283,7 @@
 			$(".sidebar-search").on("submit", function(e)
 			{
 				e.preventDefault();
-				window.location.href="https://www.baidu.com/s?wd=site:ganecheng.tech "+$("input[name='wd']").val();
+				window.location.href = "https://www.baidu.com/s?wd=site:ganecheng.tech " + $("input[name='wd']").val();
 			});
 		});
 	</script>

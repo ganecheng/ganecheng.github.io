@@ -2612,3 +2612,8 @@ h1 {
 code{
 	font-family: Consolas !important;
 }
+
+.header.navbar .navbar-nav {
+  margin-right: 0px;
+  display: block; 
+}
