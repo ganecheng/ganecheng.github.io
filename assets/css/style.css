@@ -626,7 +626,7 @@ Page container
 }
 
 .page-header-fixed .page-container {
-  margin-top: 42px;  
+  margin-top: 0px;  
 }
 
 /*** IE 8 Fixes ***/
