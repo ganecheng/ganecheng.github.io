@@ -1,5 +1,5 @@
 CACHE MANIFEST
-#2016-11-24-17-24-21-174
+#2016-11-24-17-44-22-822
 http://7xj7hx.com1.z0.glb.clouddn.com/assets/css/pages/blog.css
 http://7xj7hx.com1.z0.glb.clouddn.com/assets/css/themes/light.css
 http://7xj7hx.com1.z0.glb.clouddn.com/assets/css/plugins.css
@@ -68,6 +68,8 @@ http://cdn.bootcss.com/mathjax/2.7.0/extensions/MathMenu.js?V=2.7.0
 http://cdn.bootcss.com/mathjax/2.7.0/extensions/MathZoom.js?V=2.7.0
 http://cdn.bootcss.com/mathjax/2.7.0/jax/output/HTML-CSS/jax.js?V=2.7.0
 http://cdn.mathjax.org/mathjax/contrib/a11y/accessibility-menu.js?V=2.7.0
+http://cdn.bootcss.com/mathjax/2.7.0/jax/output/HTML-CSS/autoload/mtable.js?V=2.7.0
+http://cdn.bootcss.com/mathjax/2.7.0/jax/output/HTML-CSS/fonts/TeX/fontdata.js?V=2.7.0
 
 http://img.blog.csdn.net/20161113211054096
 http://img.blog.csdn.net/20161118165921522
