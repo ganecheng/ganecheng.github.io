@@ -1,5 +1,5 @@
 CACHE MANIFEST
-#2016-11-24-14-13-42-806
+#2016-11-24-14-20-59-959
 http://7xj7hx.com1.z0.glb.clouddn.com/assets/css/pages/blog.css
 http://7xj7hx.com1.z0.glb.clouddn.com/assets/css/themes/light.css
 http://7xj7hx.com1.z0.glb.clouddn.com/assets/css/plugins.css
@@ -63,6 +63,9 @@ http://cdn.bootcss.com/font-awesome/4.7.0/fonts/fontawesome-webfont.woff2?v=4.7.
 http://cdn.bootcss.com/font-awesome/4.7.0/fonts/fontawesome-webfont.woff?v=4.7.0
 http://cdn.bootcss.com/font-awesome/4.7.0/fonts/fontawesome-webfont.ttf?v=4.7.0
 http://7xj7hx.com1.z0.glb.clouddn.com/assets/img/syncfusion-icons-white.png
+http://cdn.bootcss.com/mathjax/2.7.0/config/TeX-AMS_HTML.js?V=2.7.0
+http://cdn.bootcss.com/mathjax/2.7.0/extensions/MathMenu.js?V=2.7.0
+http://cdn.bootcss.com/mathjax/2.7.0/extensions/MathZoom.js?V=2.7.0
 
 http://img.blog.csdn.net/20161113211054096
 http://img.blog.csdn.net/20161118165921522
