@@ -1,5 +1,5 @@
 CACHE MANIFEST
-#2016-11-24-23-01-42-756
+#2016-11-24-23-18-44-085
 #公共资源
 http://7xj7hx.com1.z0.glb.clouddn.com/assets/css/pages/blog.css
 http://7xj7hx.com1.z0.glb.clouddn.com/assets/css/themes/light.css
@@ -72,6 +72,14 @@ http://cdn.mathjax.org/mathjax/contrib/a11y/accessibility-menu.js?V=2.7.0
 http://cdn.bootcss.com/mathjax/2.7.0/jax/output/HTML-CSS/autoload/mtable.js?V=2.7.0
 http://cdn.bootcss.com/mathjax/2.7.0/jax/output/HTML-CSS/fonts/TeX/fontdata.js?V=2.7.0
 http://cdn.bootcss.com/mathjax/2.7.0/jax/output/HTML-CSS/fonts/TeX/AMS/Regular/Main.js?V=2.7.0
+http://cdn.bootcss.com/mathjax/2.7.0/fonts/HTML-CSS/TeX/woff/MathJax_Main-Regular.woff?V=2.7.0
+http://cdn.bootcss.com/mathjax/2.7.0/fonts/HTML-CSS/TeX/otf/MathJax_Main-Regular.otf?V=2.7.0
+http://cdn.bootcss.com/mathjax/2.7.0/fonts/HTML-CSS/TeX/woff/MathJax_Math-Italic.woff?V=2.7.0
+http://cdn.bootcss.com/mathjax/2.7.0/fonts/HTML-CSS/TeX/otf/MathJax_Math-Italic.otf?V=2.7.0
+http://cdn.bootcss.com/mathjax/2.7.0/fonts/HTML-CSS/TeX/woff/MathJax_Size1-Regular.woff?V=2.7.0
+http://cdn.bootcss.com/mathjax/2.7.0/fonts/HTML-CSS/TeX/otf/MathJax_Size1-Regular.otf?V=2.7.0
+http://cdn.bootcss.com/mathjax/2.7.0/jax/output/HTML-CSS/imageFonts.js?V=2.7.0
+http://cdn.bootcss.com/mathjax/2.7.0/fonts/HTML-CSS/TeX/png/AMS/Regular/Main.js?V=2.7.0
 
 
 #加载首页和每篇博客的预览图
