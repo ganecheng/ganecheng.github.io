@@ -342,6 +342,11 @@
 	<script>
 		jQuery(document).ready(function()
 		{
+			//全局使用缓存
+			$.ajaxSetup(
+			{
+				cache : true
+			});
 			App.init();
 		});
 	</script>

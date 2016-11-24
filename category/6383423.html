@@ -312,7 +312,7 @@
 												</li>
 												<li>
 													<i class="fa fa-eye"></i>
-													<a href="javascript:void(0)"> 阅读(1138) </a>
+													<a href="javascript:void(0)"> 阅读(1141) </a>
 												</li>
 												<li>
 													<i class="fa fa-comments"></i>
@@ -361,7 +361,7 @@
 												</li>
 												<li>
 													<i class="fa fa-eye"></i>
-													<a href="javascript:void(0)"> 阅读(1278) </a>
+													<a href="javascript:void(0)"> 阅读(1281) </a>
 												</li>
 												<li>
 													<i class="fa fa-comments"></i>
@@ -440,6 +440,11 @@
 	<script>
 		jQuery(document).ready(function()
 		{
+			//全局使用缓存
+			$.ajaxSetup(
+			{
+				cache : true
+			});
 			App.init();
 		});
 	</script>
