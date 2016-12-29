@@ -1,5 +1,5 @@
 CACHE MANIFEST
-#2016-12-29-21-59-40-434
+#2016-12-29-22-21-00-847
 #公共资源
 http://7xj7hx.com1.z0.glb.clouddn.com/assets/css/pages/blog.css
 http://7xj7hx.com1.z0.glb.clouddn.com/assets/css/themes/light.css
@@ -80,6 +80,11 @@ http://cdn.bootcss.com/mathjax/2.7.0/fonts/HTML-CSS/TeX/woff/MathJax_Size1-Regul
 http://cdn.bootcss.com/mathjax/2.7.0/fonts/HTML-CSS/TeX/otf/MathJax_Size1-Regular.otf?V=2.7.0
 http://cdn.bootcss.com/mathjax/2.7.0/jax/output/HTML-CSS/imageFonts.js?V=2.7.0
 http://cdn.bootcss.com/mathjax/2.7.0/fonts/HTML-CSS/TeX/png/AMS/Regular/Main.js?V=2.7.0
+https://cdn.mathjax.org/mathjax/contrib/a11y/accessibility-menu.js?V=2.7.0
+http://cdn.bootcss.com/mathjax/2.7.0/fonts/HTML-CSS/TeX/woff/MathJax_Size2-Regular.woff?V=2.7.0
+http://cdn.bootcss.com/mathjax/2.7.0/fonts/HTML-CSS/TeX/otf/MathJax_Size2-Regular.otf?V=2.7.0
+http://cdn.bootcss.com/mathjax/2.7.0/fonts/HTML-CSS/TeX/woff/MathJax_Size3-Regular.woff?V=2.7.0
+http://cdn.bootcss.com/mathjax/2.7.0/fonts/HTML-CSS/TeX/otf/MathJax_Size3-Regular.otf?V=2.7.0
 
 
 #加载首页和每篇博客的预览图
@@ -413,4 +418,4 @@ http://img.blog.csdn.net/20160809163937454
 http://img.blog.csdn.net/20160809164050557
 
 NETWORK:
-http://s11.cnzz.com/z_stat.php?id=1261033374&web_id=1261033374
+*
