@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="zh" manifest="http://www.ganecheng.tech/ent/index.manifest">
+
 <head>
 <meta charset="utf-8">
 <title>娱乐 | Gane Cheng</title>
@@ -10,8 +11,126 @@
 <meta name="renderer" content="webkit">
 
 <link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" />
-<link rel="stylesheet" href="http://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
+<link rel="stylesheet" href="http://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+<link rel="stylesheet" href="http://cdn.bootcss.com/fullPage.js/2.9.2/jquery.fullPage.min.css" />
 <link rel="stylesheet" href="http://7xj7hx.com1.z0.glb.clouddn.com/ent/css/styles.css" />
+<style>
+/* Centered texts in each section
+	* --------------------------------------- */
+.section {
+	text-align: center;
+	overflow: hidden;
+}
+
+.myVideo {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	top: 0;
+	right: 0;
+	width: 100%;
+	height: 100%;
+	background-size: 100% 100%;
+	background-color: black;
+	/* in case the video doesn't fit the whole page*/
+	background-image: /* our video */;
+	background-position: center center;
+	background-size: contain;
+	object-fit: cover; /*cover video background */
+	z-index: 3;
+}
+
+/* Layer with position absolute in order to have it over the video
+	* --------------------------------------- */
+.section0 .layer {
+	position: absolute;
+	z-index: 4;
+	width: 100%;
+	left: 0;
+	top: 43%;
+	/* 
+		* Preventing flicker on some browsers 
+		* See http://stackoverflow.com/a/36671466/1081396  or issue #183
+		*/
+	-webkit-transform: translate3d(0, 0, 0);
+	-ms-transform: translate3d(0, 0, 0);
+	transform: translate3d(0, 0, 0);
+}
+
+/*solves problem with overflowing video in Mac with Chrome */
+.section0 {
+	overflow: hidden;
+}
+
+/* Hiding video controls 
+	* See: https://css-tricks.com/custom-controls-in-html5-video-full-screen/
+	* --------------------------------------- */
+video::-webkit-media-controls {
+	display: none !important;
+}
+</style>
+<script src="http://cdn.bootcss.com/jquery/1.10.2/jquery.min.js"></script>
+<script src="http://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="http://cdn.bootcss.com/fullPage.js/2.9.2/vendors/scrolloverflow.min.js"></script>
+<script src="http://cdn.bootcss.com/fullPage.js/2.9.2/jquery.fullPage.min.js"></script>
+<script type="text/javascript">
+		$(document).ready(function() 
+		{
+			$('#fullpage').fullpage({
+				verticalCentered: true,
+				sectionsColor: ['#1bbc9b', '#4BBFC3', '#7BAABE']
+			});
+
+			$("[data-video-id]").each(function()
+					{
+						var obj=$(this);
+						obj.click(function()
+						{
+							var targetObj=$("#"+obj.attr("data-video-id"));
+
+							if(targetObj.hasClass("first_click"))
+							{
+								$("video[id!='"+obj.attr("data-video-id")+"']").not(".first_click").each(function (i, n) 
+								{ 
+									$(n).trigger('pause');
+								});
+
+								$("video[id!='"+obj.attr("data-video-id")+"']").not(".first_click").each(function (i, n) 
+								{ 
+									$(n).addClass('pause');
+								});
+
+								targetObj.removeClass('first_click');
+								targetObj.removeClass('pause');
+								targetObj.trigger('play');
+							}
+							else
+							{
+								if (targetObj.hasClass('pause')) 
+								{
+									targetObj.removeClass('pause');
+									targetObj.trigger('play');
+
+									$("video[id!='"+obj.attr("data-video-id")+"']").each(function (i, n) 
+									{ 
+										$(n).trigger('pause');
+									});
+									$("video[id!='"+obj.attr("data-video-id")+"']").each(function (i, n) 
+									{ 
+										$(n).addClass('pause');
+									});
+								} 
+								else 
+								{
+									targetObj.addClass('pause');
+									targetObj.trigger('pause');
+								}
+							}
+						});
+					});
+
+		});
+	</script>
 
 <link rel="shortcut icon" href="http://avatar.csdn.net/3/3/3/1_gane_cheng.jpg" />
 </head>
@@ -52,87 +171,103 @@
 			</div>
 		</div>
 	</nav>
-	<div class="clearfix"></div>
-	<header id="first" style="background-image: url('http://7xj7hx.com1.z0.glb.clouddn.com/ent/assets/tr9_poster.jpg');">
-		<div class="header-content">
-			<div class="inner">
-				<h1 class="cursive">古墓丽影9</h1>
-				<hr>
-				<a data-video-id="video_1" data-toggle="collapse" class="btn btn-primary btn-xl waves">开关视频</a>
-				&nbsp;
-				<a target="_blank" href="http://www.gamersky.com/z/tomb9/" class="btn btn-primary btn-xl page-scroll waves">开始探索</a>
-			</div>
-		</div>
-		<video id="video_1" loop="loop" class="fillWidth video-background pause first_click" data-wow-delay="0.5s" poster="http://7xj7hx.com1.z0.glb.clouddn.com/ent/assets/tr9_poster.jpg">
-			<source src="http://7xj7hx.com1.z0.glb.clouddn.com/ent/video/tr9_trailer.mp4" type="video/mp4">
-			Your browser does not support the video tag. I suggest you upgrade your browser.
-		</video>
-	</header>
-	<div class="clearfix"></div>
-	<header style="background-image: url('http://7xj7hx.com1.z0.glb.clouddn.com/ent/assets/gta5_poster.jpg');">
-		<div class="header-content">
-			<div class="inner">
-				<h1 class="cursive">侠盗猎车手5</h1>
-				<hr>
-				<a data-video-id="video_3" data-toggle="collapse" class="btn btn-primary btn-xl waves">开关视频</a>
-				&nbsp;
-				<a target="_blank" href="http://www.gamersky.com/z/gta5/" class="btn btn-primary btn-xl page-scroll waves">开始探索</a>
-			</div>
-		</div>
-		<video id="video_3" loop="loop" class="fillWidth video-background pause first_click" poster="http://7xj7hx.com1.z0.glb.clouddn.com/ent/assets/gta5_poster.jpg">
-			<source src="http://7xj7hx.com1.z0.glb.clouddn.com/ent/video/gta5_trailer.mp4" type="video/mp4">
-			Your browser does not support the video tag. I suggest you upgrade your browser.
-		</video>
-	</header>
-	<section id="three" class="no-padding">
-		<div class="container-fluid">
-			<div class="row no-gutter">
-				<div class="col-lg-4 col-sm-6">
-					<a href="#galleryModal" class="gallery-box waves" data-toggle="modal" data-src="http://7xj7hx.com1.z0.glb.clouddn.com/ent/assets/chen_yi_fa.jpg" data-music-id="432506345">
-						<img src="http://7xj7hx.com1.z0.glb.clouddn.com/ent/assets/chen_yi_fa.jpg" class="img-responsive" alt="Image 1">
-						<div class="gallery-box-caption">
-							<div class="gallery-box-content">
-								<div>
-									<i class="icon-lg fa fa-music"></i>
-								</div>
-							</div>
-						</div>
-					</a>
-				</div>
-				<div class="col-lg-4 col-sm-6">
-					<a href="#galleryModal" class="gallery-box waves" data-toggle="modal" data-src="http://7xj7hx.com1.z0.glb.clouddn.com/ent/assets/xue_zhi_qian.jpg" data-music-id="27808044">
-						<img src="http://7xj7hx.com1.z0.glb.clouddn.com/ent/assets/xue_zhi_qian.jpg" class="img-responsive" alt="Image 2">
-						<div class="gallery-box-caption">
-							<div class="gallery-box-content">
-								<div>
-									<i class="icon-lg fa fa-music"></i>
-								</div>
-							</div>
-						</div>
-					</a>
-				</div>
-				<div class="clearfix hidden-lg"></div>
-				<div class="col-lg-4 col-sm-6">
-					<a href="#galleryModal" class="gallery-box waves" data-toggle="modal" data-src="http://7xj7hx.com1.z0.glb.clouddn.com/ent/assets/wei_wei_yi_xiao.jpg" data-music-id="424474214">
-						<img src="http://7xj7hx.com1.z0.glb.clouddn.com/ent/assets/wei_wei_yi_xiao.jpg" class="img-responsive" alt="Image 3">
-						<div class="gallery-box-caption">
-							<div class="gallery-box-content">
-								<div>
-									<i class="icon-lg ion-ios-search"></i>
-								</div>
-							</div>
-						</div>
-					</a>
+
+	<div id="fullpage">
+		<div class="section section0">
+			<video id="video_3" loop="loop" class="pause first_click myVideo" poster="http://7xj7hx.com1.z0.glb.clouddn.com/ent/assets/gta5_poster.jpg">
+				<source src="http://7xj7hx.com1.z0.glb.clouddn.com/ent/video/gta5_trailer.mp4" type="video/mp4">
+			</video>
+			<div class="layer">
+				<div class="inner">
+					<h1 class="cursive">侠盗猎车手5</h1>
+					<hr>
+					<a data-video-id="video_3" data-toggle="collapse" class="btn btn-primary btn-xl waves">开关视频</a>
+					&nbsp;
+					<a target="_blank" href="http://www.gamersky.com/z/gta5/" class="btn btn-primary btn-xl page-scroll waves">开始探索</a>
 				</div>
 			</div>
 		</div>
-	</section>
-	<footer id="footer">
-		<div class="container-fluid">
-			<span class="pull-right text-muted small"><a target="_blank" href="http://blog.csdn.net/k346k346"> 吕兄博客 </a> <a target="_blank" href="http://blog.csdn.net/scythe666"> 琥哥博客 </a> <a target="_blank"
-					href="http://blog.csdn.net/yixianfeng41"> 易大神博客 </a> ©2017 Gane Cheng</span>
+		<div class="section" id="section1">
+			<div class="slide" id="slide1">
+				<div class="section section0">
+					<video id="video_1" loop="loop" class="pause first_click myVideo" poster="http://7xj7hx.com1.z0.glb.clouddn.com/ent/assets/tr9_poster.jpg">
+						<source src="http://7xj7hx.com1.z0.glb.clouddn.com/ent/video/tr9_trailer.mp4" type="video/mp4">
+					</video>
+					<div class="layer">
+						<h1 class="cursive">古墓丽影9</h1>
+						<hr>
+						<a data-video-id="video_1" data-toggle="collapse" class="btn btn-primary btn-xl waves">开关视频</a>
+						&nbsp;
+						<a target="_blank" href="http://www.gamersky.com/z/tomb9/" class="btn btn-primary btn-xl page-scroll waves">开始探索</a>
+					</div>
+				</div>
+			</div>
+			<div class="slide" id="slide2">
+				<div class="section section0">
+					<video id="video_2" loop="loop" class="pause first_click myVideo" poster="http://7xj7hx.com1.z0.glb.clouddn.com/ent/assets/rtr.jpg">
+						<source src="http://7xj7hx.com1.z0.glb.clouddn.com/ent/video/rtr.mp4" type="video/mp4">
+					</video>
+					<div class="layer">
+						<h1 class="cursive">古墓丽影10</h1>
+						<hr>
+						<a data-video-id="video_2" data-toggle="collapse" class="btn btn-primary btn-xl waves">开关视频</a>
+						&nbsp;
+						<a target="_blank" href="http://www.gamersky.com/z/riseofthetombraider/" class="btn btn-primary btn-xl page-scroll waves">开始探索</a>
+					</div>
+				</div>
+			</div>
 		</div>
-	</footer>
+
+		<div class="section" id="section2">
+			<div class="container-fluid">
+				<div class="row no-gutter">
+					<div class="col-lg-4 col-sm-6">
+						<a href="#galleryModal" class="gallery-box waves" data-toggle="modal" data-src="http://7xj7hx.com1.z0.glb.clouddn.com/ent/assets/chen_yi_fa.jpg" data-music-id="432506345">
+							<img src="http://7xj7hx.com1.z0.glb.clouddn.com/ent/assets/chen_yi_fa.jpg" class="img-responsive" alt="Image 1">
+							<div class="gallery-box-caption">
+								<div class="gallery-box-content">
+									<div>
+										<i class="icon-lg fa fa-music"></i>
+									</div>
+								</div>
+							</div>
+						</a>
+					</div>
+					<div class="col-lg-4 col-sm-6">
+						<a href="#galleryModal" class="gallery-box waves" data-toggle="modal" data-src="http://7xj7hx.com1.z0.glb.clouddn.com/ent/assets/xue_zhi_qian.jpg" data-music-id="27808044">
+							<img src="http://7xj7hx.com1.z0.glb.clouddn.com/ent/assets/xue_zhi_qian.jpg" class="img-responsive" alt="Image 2">
+							<div class="gallery-box-caption">
+								<div class="gallery-box-content">
+									<div>
+										<i class="icon-lg fa fa-music"></i>
+									</div>
+								</div>
+							</div>
+						</a>
+					</div>
+					<div class="clearfix hidden-lg"></div>
+					<div class="col-lg-4 col-sm-6">
+						<a href="#galleryModal" class="gallery-box waves" data-toggle="modal" data-src="http://7xj7hx.com1.z0.glb.clouddn.com/ent/assets/wei_wei_yi_xiao.jpg" data-music-id="424474214">
+							<img src="http://7xj7hx.com1.z0.glb.clouddn.com/ent/assets/wei_wei_yi_xiao.jpg" class="img-responsive" alt="Image 3">
+							<div class="gallery-box-caption">
+								<div class="gallery-box-content">
+									<div>
+										<i class="icon-lg fa fa-music"></i>
+									</div>
+								</div>
+							</div>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<footer id="footer" class="section fp-auto-height">
+			<div class="container-fluid">
+				<span class="pull-right text-muted small"><a target="_blank" href="http://blog.csdn.net/k346k346"> 吕兄博客 </a> <a target="_blank" href="http://blog.csdn.net/scythe666"> 琥哥博客 </a> <a target="_blank"
+						href="http://blog.csdn.net/yixianfeng41"> 易大神博客 </a> ©2017 Gane Cheng</span>
+			</div>
+		</footer>
+	</div>
 	<div id="galleryModal" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
 		<div class="modal-dialog modal-lg">
 			<div class="modal-content">
@@ -149,65 +284,6 @@
 			</div>
 		</div>
 	</div>
-	<!--scripts loaded here -->
-	<script src="http://cdn.bootcss.com/jquery/1.10.2/jquery.min.js"></script>
-	<script src="http://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	<script src="http://7xj7hx.com1.z0.glb.clouddn.com/ent/js/scripts.js"></script>
-
-	<script type="text/javascript">
-	$(function()
-	{
-		$("[data-video-id]").each(function()
-				{
-					var obj=$(this);
-					obj.click(function()
-					{
-						var targetObj=$("#"+obj.attr("data-video-id"));
-
-						if(targetObj.hasClass("first_click"))
-						{
-							$("video[id!='"+obj.attr("data-video-id")+"']").not(".first_click").each(function (i, n) 
-							{ 
-								$(n).trigger('pause');
-							});
-
-							$("video[id!='"+obj.attr("data-video-id")+"']").not(".first_click").each(function (i, n) 
-							{ 
-								$(n).addClass('pause');
-							});
-
-							targetObj.removeClass('first_click');
-							targetObj.removeClass('pause');
-							targetObj.trigger('play');
-						}
-						else
-						{
-							if (targetObj.hasClass('pause')) 
-							{
-								targetObj.removeClass('pause');
-								targetObj.trigger('play');
-
-								$("video[id!='"+obj.attr("data-video-id")+"']").each(function (i, n) 
-								{ 
-									$(n).trigger('pause');
-								});
-								$("video[id!='"+obj.attr("data-video-id")+"']").each(function (i, n) 
-								{ 
-									$(n).addClass('pause');
-								});
-							} 
-							else 
-							{
-								targetObj.addClass('pause');
-								targetObj.trigger('pause');
-							}
-						}
-					});
-				});
-		//attach the waves effect
-		Waves.attach('.waves');
-		Waves.init();
-		});
-	</script>
 </body>
 </html>

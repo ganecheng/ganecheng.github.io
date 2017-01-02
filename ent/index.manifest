@@ -3,9 +3,12 @@ CACHE MANIFEST
 #公共资源
 http://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css
 http://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css
+http://cdn.bootcss.com/fullPage.js/2.9.2/jquery.fullPage.min.css
+http://cdn.bootcss.com/font-awesome/4.7.0/fonts/fontawesome-webfont.woff2?v=4.7.0
 http://cdn.bootcss.com/jquery/1.10.2/jquery.min.js
 http://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js
-http://cdn.bootcss.com/font-awesome/4.7.0/fonts/fontawesome-webfont.woff2?v=4.7.0
+http://cdn.bootcss.com/fullPage.js/2.9.2/vendors/scrolloverflow.min.js
+http://cdn.bootcss.com/fullPage.js/2.9.2/jquery.fullPage.min.js
 http://avatar.csdn.net/3/3/3/1_gane_cheng.jpg
 
 http://7xj7hx.com1.z0.glb.clouddn.com/ent/css/styles.css
@@ -13,6 +16,7 @@ http://7xj7hx.com1.z0.glb.clouddn.com/ent/js/scripts.js
 
 http://7xj7hx.com1.z0.glb.clouddn.com/ent/assets/tr9_poster.jpg
 http://7xj7hx.com1.z0.glb.clouddn.com/ent/assets/gta5_poster.jpg
+http://7xj7hx.com1.z0.glb.clouddn.com/ent/assets/rtr.jpg
 http://7xj7hx.com1.z0.glb.clouddn.com/ent/assets/chen_yi_fa.jpg
 http://7xj7hx.com1.z0.glb.clouddn.com/ent/assets/xue_zhi_qian.jpg
 http://7xj7hx.com1.z0.glb.clouddn.com/ent/assets/wei_wei_yi_xiao.jpg
