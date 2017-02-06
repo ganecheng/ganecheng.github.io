@@ -180,11 +180,11 @@
 										</li>
 										<li>
 											<i class="fa fa-eye"></i>
-											<a href="javascript:void(0)"> 阅读(10) </a>
+											<a href="javascript:void(0)"> 阅读(182) </a>
 										</li>
 										<li>
 											<i class="fa fa-comments"></i>
-											<a target="_blank" href="http://blog.csdn.net/gane_cheng/article/details/54142709#comments"> 评论(0) </a>
+											<a target="_blank" href="http://blog.csdn.net/gane_cheng/article/details/54142709#comments"> 评论(3) </a>
 										</li>
 									</ul>
 								</div>
@@ -278,6 +278,11 @@
 	<script type="text/javascript">
 		$(function()
 		{
+			marked.setOptions(
+			{
+				breaks : true,
+				smartLists : true
+			});
 
 			$.get("http://7xj7hx.com1.z0.glb.clouddn.com/md/54142709.md", function(data)
 			{
@@ -318,6 +323,8 @@
 				//attach the waves effect
 				Waves.attach('.waves');
 				Waves.init();
+
+				$.getScript("http://s11.cnzz.com/z_stat.php?id=1261033374&web_id=1261033374");
 			});
 
 			$(".sidebar-search").on("submit", function(e)
@@ -336,7 +343,6 @@
                 });
     </script>
 	<!-- END JAVASCRIPTS -->
-	<script src="http://s11.cnzz.com/z_stat.php?id=1261033374&web_id=1261033374" language="JavaScript"></script>
 </body>
 <!-- END BODY -->
 </html>
