@@ -1,5 +1,6 @@
 
 
+
 <!DOCTYPE html>
 <!--[if IE 8]> <html lang="en" class="ie8 no-js"> <![endif]-->
 <!--[if IE 9]> <html lang="en" class="ie9 no-js"> <![endif]-->
@@ -17,9 +18,6 @@
 <meta name="renderer" content="webkit">
 
 <!-- BEGIN GLOBAL MANDATORY STYLES -->
-<link href="http://7xj7hx.com1.z0.glb.clouddn.com/css/fontface.css" rel="stylesheet" type="text/css" />
-<!-- <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700&subset=all" rel="stylesheet" type="text/css" /> -->
-<link href="http://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
 <link href="http://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
 <!-- END GLOBAL MANDATORY STYLES -->
 <!-- BEGIN THEME STYLES -->
@@ -58,22 +56,22 @@
 				<!-- BEGIN TODO DROPDOWN -->
 				<li class="dropdown">
 					<a href="http://www.ganecheng.tech/index.html" class="waves">
-						<i class="fa fa-tasks"></i> 博客
+						<i class="icon-gongkaiboke text-blue"></i> 博客
 					</a>
 				</li>
 				<li class="dropdown">
 					<a href="http://www.ganecheng.tech/ent/index.html" class="waves">
-						<i class="fa fa-youtube-play"></i> 娱乐
+						<i class="icon-youtube text-red"></i> 娱乐
 					</a>
 				</li>
 				<li class="dropdown">
 					<a target="_blank" href="https://github.com/ganecheng" class="waves">
-						<i class="fa fa-github"></i> GitHub
+						<i class="icon-github text-black"></i> GitHub
 					</a>
 				</li>
 				<li class="dropdown">
 					<a target="_blank" href="http://blog.csdn.net/gane_cheng" class="waves">
-						<i class="fa fa-chrome"></i> CSDN
+						<i class="icon-csdn text-red"></i> CSDN
 					</a>
 				</li>
 				<!-- END TODO DROPDOWN -->
@@ -126,12 +124,12 @@
 				<div class="width-1020-center">
 					<ul class="page-breadcrumb breadcrumb">
 						<li>
-							<i class="fa fa-home"></i>
-							<a href="http://www.ganecheng.tech/index.html"> 首页 </a>
-							<i class="fa fa-angle-right"></i>
+							<i class="icon-shouyeshouye"></i>
+							<a href="http://www.ganecheng.tech/index.html" class="text-blue"> 首页 </a>
+							<i class="icon-rightarrow"></i>
 						</li>
 						<li>
-							<a href="javascript:void(0)"> 博客列表 </a>
+							<a href="javascript:void(0)" class="pure-text"> 博客列表 </a>
 						</li>
 					</ul>
 				</div>
@@ -143,7 +141,7 @@
 						<div class="width-1020-center blog-tag-data">
 							<ul class="list-inline blog-tags">
 								<li>
-									<i class="fa fa-list-ul"></i>
+									<i class="icon-fenlei"></i>
 									
 										
 										
@@ -306,7 +304,7 @@
 
 					<div class="width-1020-center">
 						<div>
-							<div id="MainArticleDiv" style="margin: 10px 0px;">
+							<div style="margin: 10px 0px;">
 								<h1 style="display: none;">博客列表</h1>
 								
 									<div class="row">
@@ -319,15 +317,15 @@
 											
 											<ul class="list-inline">
 												<li>
-													<i class="fa fa-calendar"></i>
-													<a href="javascript:void(0)"> 2016-08-17 17:48 </a>
+													<i class="icon-rili"></i>
+													<a href="javascript:void(0)" class="pure-text"> 2016-08-17 </a>
 												</li>
 												<li>
-													<i class="fa fa-eye"></i>
-													<a href="javascript:void(0)"> 阅读(461) </a>
+													<i class="icon-yanjing"></i>
+													<a href="javascript:void(0)" class="pure-text"> 阅读(465) </a>
 												</li>
 												<li>
-													<i class="fa fa-comments"></i>
+													<i class="icon-taolun"></i>
 													<a target="_blank" href="http://blog.csdn.net/gane_cheng/article/details/52233151#comments"> 评论(0) </a>
 												</li>
 											</ul>
@@ -335,7 +333,7 @@
 											
 												<ul class="list-inline blog-tags">
 													<li>
-														<i class="fa fa-list-ul"></i>
+														<i class="icon-fenlei"></i>
 														
 															<a href="http://www.ganecheng.tech/category/6357000.html"> C# </a>
 														
@@ -344,17 +342,14 @@
 													</li>
 												</ul>
 											
-
-											
-
 										</div>
 										<div class="col-md-8 blog-article">
 											<h2>
-												<a href="http://www.ganecheng.tech/blog/52233151.html"> C#原生连接数据库并操作数据库的方法 </a>
+												<a href="http://www.ganecheng.tech/blog/52233151.html" class="text-bold"> C#原生连接数据库并操作数据库的方法 </a>
 											</h2>
 											<p>最近想使用C#连一下SQL Server数据库，一搜网上资料，发现大部分是关于Linq的。但是我只想简简单单的连一下数据库，读取一下数据，用完就释放连接的这种，不想整一堆ORM的类文件到项目中，经过查阅相关资料后，总结方法如下。首先需要引入数据库连接所在的命名空间。接着就可以在代码中实现了。...        </p>
 											<a class="btn blue waves" href="http://www.ganecheng.tech/blog/52233151.html">
-												查看文章 <i class="m-icon-swapright m-icon-white"></i>
+												查看文章 <i class="icon-youjiantou"></i>
 											</a>
 										</div>
 									</div>
@@ -370,15 +365,15 @@
 											
 											<ul class="list-inline">
 												<li>
-													<i class="fa fa-calendar"></i>
-													<a href="javascript:void(0)"> 2016-08-09 16:32 </a>
+													<i class="icon-rili"></i>
+													<a href="javascript:void(0)" class="pure-text"> 2016-08-09 </a>
 												</li>
 												<li>
-													<i class="fa fa-eye"></i>
-													<a href="javascript:void(0)"> 阅读(696) </a>
+													<i class="icon-yanjing"></i>
+													<a href="javascript:void(0)" class="pure-text"> 阅读(709) </a>
 												</li>
 												<li>
-													<i class="fa fa-comments"></i>
+													<i class="icon-taolun"></i>
 													<a target="_blank" href="http://blog.csdn.net/gane_cheng/article/details/52163912#comments"> 评论(0) </a>
 												</li>
 											</ul>
@@ -386,24 +381,21 @@
 											
 												<ul class="list-inline blog-tags">
 													<li>
-														<i class="fa fa-list-ul"></i>
+														<i class="icon-fenlei"></i>
 														
 															<a href="http://www.ganecheng.tech/category/6357000.html"> C# </a>
 														
 													</li>
 												</ul>
 											
-
-											
-
 										</div>
 										<div class="col-md-8 blog-article">
 											<h2>
-												<a href="http://www.ganecheng.tech/blog/52163912.html"> C# DataGridView在HeaderCell中显示行号的方法 </a>
+												<a href="http://www.ganecheng.tech/blog/52163912.html" class="text-bold"> C# DataGridView在HeaderCell中显示行号的方法 </a>
 											</h2>
 											<p>C# DataGridView在HeaderCell中显示行号的方法使用C#开发WinForm程序时，DataGridView是我们经常用到的表格数据控件。使用此控件的时候经常有一个需求，就是需要在第一列中显示行号，方便知道现在操作到哪一行了。这个时候我们就有两种显示方式了：一种是直接显示在HeaderCell中。 另一种是显示在数据列中。 显示在数据列上的缺点显而易见。一般我们显示在DataGr...        </p>
 											<a class="btn blue waves" href="http://www.ganecheng.tech/blog/52163912.html">
-												查看文章 <i class="m-icon-swapright m-icon-white"></i>
+												查看文章 <i class="icon-youjiantou"></i>
 											</a>
 										</div>
 									</div>
@@ -433,7 +425,7 @@
 				<a target="_blank" href="http://blog.csdn.net/yixianfeng41"> 易大神博客 </a>
 			</div>
 			<div class="footer-tools">
-				<span class="go-top"> <i class="fa fa-angle-up waves"></i>
+				<span class="go-top"> <i class="icon-shangjiantou"></i>
 				</span>
 			</div>
 		</div>
