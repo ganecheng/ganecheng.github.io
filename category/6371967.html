@@ -56,22 +56,22 @@
 				<!-- BEGIN TODO DROPDOWN -->
 				<li class="dropdown">
 					<a href="http://www.ganecheng.tech/index.html" class="waves">
-						<i class="icon-gongkaiboke text-blue"></i> 博客
+						<i class="icon-gongkaiboke"></i> 博客
 					</a>
 				</li>
 				<li class="dropdown">
 					<a href="http://www.ganecheng.tech/ent/index.html" class="waves">
-						<i class="icon-youtube text-red"></i> 娱乐
+						<i class="icon-youtube"></i> 娱乐
 					</a>
 				</li>
 				<li class="dropdown">
 					<a target="_blank" href="https://github.com/ganecheng" class="waves">
-						<i class="icon-github text-black"></i> GitHub
+						<i class="icon-github"></i> GitHub
 					</a>
 				</li>
 				<li class="dropdown">
 					<a target="_blank" href="http://blog.csdn.net/gane_cheng" class="waves">
-						<i class="icon-csdn text-red"></i> CSDN
+						<i class="icon-csdn"></i> CSDN
 					</a>
 				</li>
 				<!-- END TODO DROPDOWN -->
@@ -304,7 +304,7 @@
 
 					<div class="width-1020-center">
 						<div>
-							<div style="margin: 10px 0px;">
+							<div id="MainListDiv" style="margin: 10px 0px;">
 								<h1 style="display: none;">博客列表</h1>
 								
 									<div class="row">
@@ -511,7 +511,7 @@
 			$('#tree').ztree_toc(
 			{
 				is_auto_number : false,
-				documment_selector : '#MainArticleDiv',
+				documment_selector : '#MainListDiv',
 				ztreeStyle :
 				{
 					width : '218px',
