@@ -1,5 +1,5 @@
 CACHE MANIFEST
-#2017-06-11-11-41-32-416
+#2017-06-11-11-46-04-177
 #公共资源
 http://7xj7hx.com1.z0.glb.clouddn.com/assets/css/pages/blog.css
 http://7xj7hx.com1.z0.glb.clouddn.com/assets/css/themes/light.css
@@ -62,20 +62,20 @@ http://cdn.bootcss.com/mathjax/2.7.0/fonts/HTML-CSS/TeX/otf/MathJax_Size3-Regula
 
 #加载首页和每篇博客的预览图
 http://www.ganecheng.tech
-http://www.ganecheng.tech/index.html
-http://www.ganecheng.tech/index.manifest
+http://www.ganecheng.tech/recommend/index.html
+http://www.ganecheng.tech/recommend/index.manifest
 http://img.blog.csdn.net/20170608172825007
 
 #加载所有博客页面和MarkDown文件
-http://www.ganecheng.tech/blog/72956248.html
+http://www.ganecheng.tech/recommend/72956248.html
 http://7xj7hx.com1.z0.glb.clouddn.com/md/72956248.md
-http://www.ganecheng.tech/blog/72929087.html
+http://www.ganecheng.tech/recommend/72929087.html
 http://7xj7hx.com1.z0.glb.clouddn.com/md/72929087.md
-http://www.ganecheng.tech/blog/72898089.html
+http://www.ganecheng.tech/recommend/72898089.html
 http://7xj7hx.com1.z0.glb.clouddn.com/md/72898089.md
-http://www.ganecheng.tech/blog/72897565.html
+http://www.ganecheng.tech/recommend/72897565.html
 http://7xj7hx.com1.z0.glb.clouddn.com/md/72897565.md
-http://www.ganecheng.tech/blog/72897101.html
+http://www.ganecheng.tech/recommend/72897101.html
 http://7xj7hx.com1.z0.glb.clouddn.com/md/72897101.md
 
 #加载所有的类型页面
