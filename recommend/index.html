@@ -1,0 +1,505 @@
+
+
+
+<!DOCTYPE html>
+<!--[if IE 8]> <html lang="en" class="ie8 no-js"> <![endif]-->
+<!--[if IE 9]> <html lang="en" class="ie9 no-js"> <![endif]-->
+<!--[if !IE]><!-->
+<html lang="zh" class="no-js" manifest="http://www.ganecheng.tech/recommend/index.manifest">
+<!--<![endif]-->
+<!-- BEGIN HEAD -->
+<head>
+<meta charset="utf-8" />
+<title>精选 | Gane Cheng</title>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<meta name="description" content="精选,Gane Cheng">
+<meta name="author" content="Gane Cheng">
+<meta name="renderer" content="webkit">
+
+<!-- BEGIN GLOBAL MANDATORY STYLES -->
+<link href="http://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+<!-- END GLOBAL MANDATORY STYLES -->
+<!-- BEGIN THEME STYLES -->
+<link href="http://7xj7hx.com1.z0.glb.clouddn.com/assets/css/style-metronic.css" rel="stylesheet" type="text/css" />
+<link href="http://7xj7hx.com1.z0.glb.clouddn.com/assets/css/style.css" rel="stylesheet" type="text/css" />
+<link href="http://7xj7hx.com1.z0.glb.clouddn.com/assets/css/style-responsive.css" rel="stylesheet" type="text/css" />
+<link href="http://7xj7hx.com1.z0.glb.clouddn.com/assets/css/plugins.css" rel="stylesheet" type="text/css" />
+<link href="http://7xj7hx.com1.z0.glb.clouddn.com/assets/css/pages/blog.css" rel="stylesheet" type="text/css" />
+<link href="http://7xj7hx.com1.z0.glb.clouddn.com/assets/css/themes/light.css" rel="stylesheet" type="text/css" id="style_color" />
+<link href="http://cdn.bootcss.com/zTree.v3/3.5.24/css/zTreeStyle/zTreeStyle.min.css" rel="stylesheet" type="text/css">
+<link href="http://7xj7hx.com1.z0.glb.clouddn.com/css/marxico.css" rel="stylesheet"></link>
+<link href="http://cdn.bootcss.com/highlight.js/9.7.0/styles/vs.min.css" rel="stylesheet"></link>
+
+<!-- END THEME STYLES -->
+<link rel="shortcut icon" href="http://avatar.csdn.net/3/3/3/1_gane_cheng.jpg" />
+</head>
+<!-- END HEAD -->
+<!-- BEGIN BODY -->
+<body class="page-header-fixed page-sidebar-fixed">
+	<!-- BEGIN HEADER -->
+	<div class="header navbar navbar-fixed-top">
+		<!-- BEGIN TOP NAVIGATION BAR -->
+		<div class="header-inner">
+			<!-- BEGIN LOGO -->
+			<a class="navbar-brand" href="http://www.ganecheng.tech">
+				<img src="http://avatar.csdn.net/3/3/3/1_gane_cheng.jpg" height="42px" alt="logo" class="waves" />
+			</a>
+			<!-- END LOGO -->
+			<!-- BEGIN RESPONSIVE MENU TOGGLER -->
+			<a href="javascript:;" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+				<img src="http://7xj7hx.com1.z0.glb.clouddn.com/assets/img/menu-toggler.png" alt="" />
+			</a>
+			<!-- END RESPONSIVE MENU TOGGLER -->
+			<!-- BEGIN TOP NAVIGATION MENU -->
+			<ul class="nav navbar-nav pull-right">
+				<!-- BEGIN TODO DROPDOWN -->
+				<li class="dropdown">
+					<a href="http://www.ganecheng.tech/index.html" class="waves">
+						<i class="icon-gongkaiboke"></i> 博客
+					</a>
+				</li>
+				<li class="dropdown">
+					<a href="http://www.ganecheng.tech/recommend/index.html" class="waves">
+						<i class="icon-kafei"></i> 精选
+					</a>
+				</li>
+				<li class="dropdown">
+					<a href="http://www.ganecheng.tech/ent/index.html" class="waves">
+						<i class="icon-youtube"></i> 娱乐
+					</a>
+				</li>
+				<li class="dropdown">
+					<a target="_blank" href="https://github.com/ganecheng" class="waves">
+						<i class="icon-github"></i> GitHub
+					</a>
+				</li>
+				<li class="dropdown">
+					<a target="_blank" href="http://blog.csdn.net/gane_cheng" class="waves">
+						<i class="icon-csdn"></i> CSDN
+					</a>
+				</li>
+				<!-- END TODO DROPDOWN -->
+			</ul>
+			<!-- END TOP NAVIGATION MENU -->
+		</div>
+		<!-- END TOP NAVIGATION BAR -->
+	</div>
+	<!-- END HEADER -->
+	<div class="clearfix"></div>
+	<!-- BEGIN CONTAINER -->
+	<div class="page-container">
+
+		<!-- BEGIN SIDEBAR -->
+		<div class="page-sidebar-wrapper">
+			<div class="page-sidebar navbar-collapse collapse">
+				<!-- BEGIN SIDEBAR MENU -->
+				<ul class="page-sidebar-menu" data-auto-scroll="true" data-slide-speed="200">
+					<li class="sidebar-toggler-wrapper">
+						<!-- BEGIN SIDEBAR TOGGLER BUTTON -->
+						<div class="sidebar-toggler hidden-phone"></div>
+						<!-- BEGIN SIDEBAR TOGGLER BUTTON -->
+					</li>
+					<li class="sidebar-search-wrapper">
+						<form class="sidebar-search" action="" method="get">
+							<div class="form-container">
+								<div class="input-box">
+									<a href="javascript:;" class="remove"> </a>
+									<input type="text" name="wd" placeholder="搜索" /> <input type="button" class="submit" value=" " />
+								</div>
+							</div>
+						</form>
+					</li>
+					<li>
+						<ul id="tree" class="ztree" style="display: none; width: 218px; overflow: hidden;">
+						</ul>
+					</li>
+
+				</ul>
+				<!-- END SIDEBAR MENU -->
+			</div>
+		</div>
+		<!-- END SIDEBAR -->
+
+		<!-- BEGIN CONTENT -->
+		<div class="page-content-wrapper">
+			<div class="page-content">
+				<!-- BEGIN PAGE HEADER-->
+				<div class="width-1020-center">
+					<ul class="page-breadcrumb breadcrumb">
+						<li>
+							<i class="icon-shouyeshouye"></i>
+							<a href="http://www.ganecheng.tech/index.html" class="text-blue"> 首页 </a>
+							<i class="icon-rightarrow"></i>
+						</li>
+						<li>
+							<a href="javascript:void(0)" class="pure-text"> 精选列表 </a>
+						</li>
+					</ul>
+				</div>
+				<!-- END PAGE HEADER-->
+
+				<!-- BEGIN PAGE CONTENT-->
+				<div class="blog-page">
+					
+						<div class="width-1020-center blog-tag-data">
+							<ul class="list-inline blog-tags">
+								<li>
+									<i class="icon-fenlei"></i>
+									
+										
+											<a href="http://www.ganecheng.tech/index.html" class="bg-blue"> 全部分类 </a>
+										
+										
+									
+									
+										
+											
+											
+												<a href="http://www.ganecheng.tech/category/6959366.html"> 程序员(2) </a>
+											
+										
+									
+										
+											
+											
+												<a href="http://www.ganecheng.tech/category/6960312.html"> 人生感悟(0) </a>
+											
+										
+									
+								</li>
+							</ul>
+							<hr>
+						</div>
+					
+
+					<div class="width-1020-center">
+						<div>
+							<div id="MainListDiv" style="margin: 10px 0px;">
+								<h1 style="display: none;">精选列表</h1>
+								
+									<div class="row">
+										<div class="col-md-4 blog-img blog-tag-data">
+											
+												
+												
+													<img src="http://avatar.csdn.net/3/3/3/1_gane_cheng.jpg" alt="" class="img-responsive center-block">
+												
+											
+											<ul class="list-inline">
+												<li>
+													<i class="icon-rili"></i>
+													<a href="javascript:void(0)" class="pure-text"> 2017-06-09 </a>
+												</li>
+												<li>
+													<i class="icon-yanjing"></i>
+													<a href="javascript:void(0)" class="pure-text"> 阅读(29) </a>
+												</li>
+												<li>
+													<i class="icon-taolun"></i>
+													<a target="_blank" href="http://blog.csdn.net/gane_cheng/article/details/72956248#comments"> 评论(0) </a>
+												</li>
+											</ul>
+
+											
+												<ul class="list-inline blog-tags">
+													<li>
+														<i class="icon-fenlei"></i>
+														
+															<a href="http://www.ganecheng.tech/category/6960312.html"> 人生感悟 </a>
+														
+													</li>
+												</ul>
+											
+										</div>
+										<div class="col-md-8 blog-article">
+											<h2>
+												<a href="http://www.ganecheng.tech/blog/72956248.html" class="text-bold"> 有哪些有用的人际交往小常识？ </a>
+											</h2>
+											<p>1、管住嘴，对超出能力的事情坚决说“不”。  王哥调动托我疏通关系，酒桌上碍于面子硬着头皮答应了，之后真是无比纠结，虽然事情最后办成了，但运气成分很大，如果办不成，自己出糗事小，还耽误别人大事，以后类似事情，必须先权衡一二，不能图一时爽快满嘴跑火车。2、不轻易承诺，承诺必去做。  同事光哥是热心肠，谁找他帮忙都应承，前天拜托他的事情居然忘了，以前也有过一次，老苗也抱怨好几次，果然是轻诺必寡信，...        </p>
+											<a class="btn blue waves" href="http://www.ganecheng.tech/blog/72956248.html">
+												查看文章 <i class="icon-youjiantou"></i>
+											</a>
+										</div>
+									</div>
+									<hr>
+								
+									<div class="row">
+										<div class="col-md-4 blog-img blog-tag-data">
+											
+												
+													<img src="http://img.blog.csdn.net/20170608172825007" alt="" class="img-responsive center-block" style="max-height: 220px;">
+												
+												
+											
+											<ul class="list-inline">
+												<li>
+													<i class="icon-rili"></i>
+													<a href="javascript:void(0)" class="pure-text"> 2017-06-08 </a>
+												</li>
+												<li>
+													<i class="icon-yanjing"></i>
+													<a href="javascript:void(0)" class="pure-text"> 阅读(24) </a>
+												</li>
+												<li>
+													<i class="icon-taolun"></i>
+													<a target="_blank" href="http://blog.csdn.net/gane_cheng/article/details/72929087#comments"> 评论(0) </a>
+												</li>
+											</ul>
+
+											
+												<ul class="list-inline blog-tags">
+													<li>
+														<i class="icon-fenlei"></i>
+														
+															<a href="http://www.ganecheng.tech/category/6960312.html"> 人生感悟 </a>
+														
+													</li>
+												</ul>
+											
+										</div>
+										<div class="col-md-8 blog-article">
+											<h2>
+												<a href="http://www.ganecheng.tech/blog/72929087.html" class="text-bold"> 跟学识浅薄却固执己见的人聊天是种什么体验？ </a>
+											</h2>
+											<p>很多人提到的“不懂常识”，其实是“不懂对知识的敬畏”。我曾和一个学长聊天，他给我讲了这么一段话。“好好珍惜大学四年时间吧，你要知道，在大学里很多你以为是常识的东西，在这个社会上都是非主流的。”这段话令我感触很深。在大学里，周围的人觉得学校在QS、US news上的排名基本算常识，但出去你给别人讲是北京大学的，人家可能问你“那么你到底是北京哪个大学啊”； 在大学里，知道点基本的经济学常识，懂基本的数...        </p>
+											<a class="btn blue waves" href="http://www.ganecheng.tech/blog/72929087.html">
+												查看文章 <i class="icon-youjiantou"></i>
+											</a>
+										</div>
+									</div>
+									<hr>
+								
+									<div class="row">
+										<div class="col-md-4 blog-img blog-tag-data">
+											
+												
+												
+													<img src="http://avatar.csdn.net/3/3/3/1_gane_cheng.jpg" alt="" class="img-responsive center-block">
+												
+											
+											<ul class="list-inline">
+												<li>
+													<i class="icon-rili"></i>
+													<a href="javascript:void(0)" class="pure-text"> 2017-06-07 </a>
+												</li>
+												<li>
+													<i class="icon-yanjing"></i>
+													<a href="javascript:void(0)" class="pure-text"> 阅读(32) </a>
+												</li>
+												<li>
+													<i class="icon-taolun"></i>
+													<a target="_blank" href="http://blog.csdn.net/gane_cheng/article/details/72898089#comments"> 评论(0) </a>
+												</li>
+											</ul>
+
+											
+												<ul class="list-inline blog-tags">
+													<li>
+														<i class="icon-fenlei"></i>
+														
+															<a href="http://www.ganecheng.tech/category/6960312.html"> 人生感悟 </a>
+														
+													</li>
+												</ul>
+											
+										</div>
+										<div class="col-md-8 blog-article">
+											<h2>
+												<a href="http://www.ganecheng.tech/blog/72898089.html" class="text-bold"> 有哪些中国社会的现实有一部分学生还没意识到？ </a>
+											</h2>
+											<p>任何一种现象都是无法代表整体的，就像心理学效应一样，可能只是适用于一部分人，90%、70%，甚至连这个数据都达不到。把事情想得过于顺理成章才是大学生没有意识到的问题。1.以为能凭聚餐喝酒结识到有用的人脉。2.“毕业等于失业”不会发生在自己身上。3.喜欢用考既无含金量又与自己专业无关的证来证明自己的能力。4.对英语学习漠不关心，等着以后翻译工具普及。5.强行灌输“不玩游戏、不谈恋爱不算是完整的大学”观...        </p>
+											<a class="btn blue waves" href="http://www.ganecheng.tech/blog/72898089.html">
+												查看文章 <i class="icon-youjiantou"></i>
+											</a>
+										</div>
+									</div>
+									<hr>
+								
+									<div class="row">
+										<div class="col-md-4 blog-img blog-tag-data">
+											
+												
+												
+													<img src="http://avatar.csdn.net/3/3/3/1_gane_cheng.jpg" alt="" class="img-responsive center-block">
+												
+											
+											<ul class="list-inline">
+												<li>
+													<i class="icon-rili"></i>
+													<a href="javascript:void(0)" class="pure-text"> 2017-06-07 </a>
+												</li>
+												<li>
+													<i class="icon-yanjing"></i>
+													<a href="javascript:void(0)" class="pure-text"> 阅读(26) </a>
+												</li>
+												<li>
+													<i class="icon-taolun"></i>
+													<a target="_blank" href="http://blog.csdn.net/gane_cheng/article/details/72897565#comments"> 评论(0) </a>
+												</li>
+											</ul>
+
+											
+												<ul class="list-inline blog-tags">
+													<li>
+														<i class="icon-fenlei"></i>
+														
+															<a href="http://www.ganecheng.tech/category/6959366.html"> 程序员 </a>
+														
+													</li>
+												</ul>
+											
+										</div>
+										<div class="col-md-8 blog-article">
+											<h2>
+												<a href="http://www.ganecheng.tech/blog/72897565.html" class="text-bold"> 如何向外行解释产品经理频繁更改需求为什么会令程序员烦恼? </a>
+											</h2>
+											<p>你去饭店，坐下来。 “服务员，给我来份宫保鸡丁！” “好嘞！” ——————这叫原始需求大厨做到一半。 “服务员，菜里不要放肉。” “不放肉怎么做啊？” “不放肉就行了，其它正常做，不就行了？” “好的您稍等” ——————中途需求变更厨房： 大厨：“你大爷，我肉都回锅了” 服务员：“顾客非要要求的嘛，你把肉挑出来不就行了吗” 大厨：“行你大爷” 然而还是一点点挑出来了 —...        </p>
+											<a class="btn blue waves" href="http://www.ganecheng.tech/blog/72897565.html">
+												查看文章 <i class="icon-youjiantou"></i>
+											</a>
+										</div>
+									</div>
+									<hr>
+								
+									<div class="row">
+										<div class="col-md-4 blog-img blog-tag-data">
+											
+												
+												
+													<img src="http://avatar.csdn.net/3/3/3/1_gane_cheng.jpg" alt="" class="img-responsive center-block">
+												
+											
+											<ul class="list-inline">
+												<li>
+													<i class="icon-rili"></i>
+													<a href="javascript:void(0)" class="pure-text"> 2017-06-07 </a>
+												</li>
+												<li>
+													<i class="icon-yanjing"></i>
+													<a href="javascript:void(0)" class="pure-text"> 阅读(25) </a>
+												</li>
+												<li>
+													<i class="icon-taolun"></i>
+													<a target="_blank" href="http://blog.csdn.net/gane_cheng/article/details/72897101#comments"> 评论(0) </a>
+												</li>
+											</ul>
+
+											
+												<ul class="list-inline blog-tags">
+													<li>
+														<i class="icon-fenlei"></i>
+														
+															<a href="http://www.ganecheng.tech/category/6959366.html"> 程序员 </a>
+														
+													</li>
+												</ul>
+											
+										</div>
+										<div class="col-md-8 blog-article">
+											<h2>
+												<a href="http://www.ganecheng.tech/blog/72897101.html" class="text-bold"> 一个优秀程序员具备的15个特性 </a>
+											</h2>
+											<p>编程是个很复杂的玩意，但是成就优秀程序员的很多因素和我们在学校中早期学到的相差无几。本文灵感来源于 Robert Fulghum 的《All I Really Need to Know I Learned in Kindergarten》。分享尽可能地使用开源，并且如果有能力的话也可以把自己的成果分享给大家。整个社会的智慧结晶肯定比一些大公司自管自闭门造车要好。公平的心态不要以为你的选择就是唯一能奏...        </p>
+											<a class="btn blue waves" href="http://www.ganecheng.tech/blog/72897101.html">
+												查看文章 <i class="icon-youjiantou"></i>
+											</a>
+										</div>
+									</div>
+									<hr>
+								
+							</div>
+							<!-- END PAGE CONTENT-->
+						</div>
+					</div>
+					<hr>
+				</div>
+			</div>
+			<!-- END PAGE CONTENT-->
+
+		</div>
+	</div>
+	<!-- END CONTENT -->
+	</div>
+	<!-- END CONTAINER -->
+	<!-- BEGIN FOOTER -->
+	<div class="footer">
+		<div class="width-1020-center">
+			<div class="footer-inner">
+				2016 &copy; Gane Cheng.
+				<a target="_blank" href="http://blog.csdn.net/k346k346"> 吕兄博客 </a>
+				<a target="_blank" href="http://blog.csdn.net/scythe666"> 琥哥博客 </a>
+				<a target="_blank" href="http://blog.csdn.net/yixianfeng41"> 易大神博客 </a>
+			</div>
+			<div class="footer-tools">
+				<span class="go-top"> <i class="icon-shangjiantou"></i>
+				</span>
+			</div>
+		</div>
+	</div>
+	<!-- END FOOTER -->
+	<!-- BEGIN JAVASCRIPTS(Load javascripts at bottom, this will reduce page load time) -->
+	<!-- BEGIN CORE PLUGINS -->
+	<!--[if lt IE 9]>
+	<script src="http://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+	<![endif]-->
+	<script src="http://cdn.bootcss.com/jquery/1.10.2/jquery.min.js" type="text/javascript"></script>
+	<script src="http://cdn.bootcss.com/jquery-migrate/1.2.1/jquery-migrate.min.js" type="text/javascript"></script>
+	<script src="http://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js" type="text/javascript"></script>
+	<script src="http://cdn.bootcss.com/jQuery-slimScroll/1.3.8/jquery.slimscroll.min.js" type="text/javascript"></script>
+	<script src="http://cdn.bootcss.com/jquery-cookie/1.4.1/jquery.cookie.min.js" type="text/javascript"></script>
+	<!-- END CORE PLUGINS -->
+	<script src="http://7xj7hx.com1.z0.glb.clouddn.com/assets/scripts/core/app.js"></script>
+	<script>
+		jQuery(document).ready(function()
+		{
+			//全局使用缓存
+			$.ajaxSetup(
+			{
+				cache : true
+			});
+			App.init();
+		});
+	</script>
+
+	<script src="http://cdn.bootcss.com/zTree.v3/3.5.24/js/jquery.ztree.core.min.js"></script>
+	<script src="http://7xj7hx.com1.z0.glb.clouddn.com/js/ztree_toc.js"></script>
+
+	<script type="text/javascript">
+		$(function()
+		{
+			//自动识别目录
+			$('#tree').ztree_toc(
+			{
+				is_auto_number : false,
+				documment_selector : '#MainListDiv',
+				ztreeStyle :
+				{
+					width : '218px',
+					overflow : 'hidden',
+					'z-index' : 2147483647,
+					border : '0px none',
+					right : '0px',
+					bottom : '0px',
+					height : 'auto'
+				}
+			});
+			$('#tree').show();
+
+			$(".sidebar-search").on("submit", function(e)
+			{
+				e.preventDefault();
+				window.location.href = "https://www.baidu.com/s?wd=site:ganecheng.tech " + $("input[name='wd']").val();
+			});
+
+			//attach the waves effect
+			Waves.attach('.waves');
+			Waves.init();
+
+			$.getScript("http://s11.cnzz.com/z_stat.php?id=1261033374&web_id=1261033374");
+		});
+	</script>
+	<!-- END JAVASCRIPTS -->
+</body>
+<!-- END BODY -->
+</html>
