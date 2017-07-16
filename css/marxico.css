@@ -1,3 +1,94 @@
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Open Sans Light'), local('OpenSans-Light'), url("http://7xj7hx.com1.z0.glb.clouddn.com/css/fonts/DXI1ORHCpsQm3Vp6mXoaTegdm0LZdjqr5-oayXSOefg.woff2") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Open Sans'), local('OpenSans'), url("http://7xj7hx.com1.z0.glb.clouddn.com/css/fonts/cJZKeOuBrn4kERxqtaUH3VtXRa8TVwTICgirnJhmVJw.woff2") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Open Sans Bold'), local('OpenSans-Bold'), url(http://7xj7hx.com1.z0.glb.clouddn.com/css/fonts/k3k702ZOKiLJc3WVjuplzOgdm0LZdjqr5-oayXSOefg.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+@font-face {
+  font-family: 'icomoon';
+  src:  url('http://7xj7hx.com1.z0.glb.clouddn.com/css/fonts/icomoon.eot');
+  src:  url('http://7xj7hx.com1.z0.glb.clouddn.com/css/fonts/icomoon.eot?#iefix') format('embedded-opentype'),
+    url('http://7xj7hx.com1.z0.glb.clouddn.com/css/fonts/icomoon.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-youjiantou:before {
+  content: "\e600";
+}
+.icon-rili:before {
+  content: "\e601";
+}
+.icon-rightarrow:before {
+  content: "\e65e";
+}
+.icon-yanjing:before {
+  content: "\e61c";
+}
+.icon-fenlei:before {
+  content: "\e60d";
+}
+.icon-youtube:before {
+  content: "\e661";
+}
+.icon-github:before {
+  content: "\e735";
+}
+.icon-gongkaiboke:before {
+  content: "\e613";
+}
+.icon-zuojiantou:before {
+  content: "\e621";
+}
+.icon-tag-copy:before {
+  content: "\e602";
+}
+.icon-taolun:before {
+  content: "\e662";
+}
+.icon-shouyeshouye:before {
+  content: "\e629";
+}
+.icon-xiajiantou:before {
+  content: "\e6c7";
+}
+.icon-csdn:before {
+  content: "\e60e";
+}
+.icon-shangjiantou:before {
+  content: "\e63b";
+}
+
 
 
 table {
@@ -427,7 +518,7 @@ body {
 		sans-serif;
 	font-size: 15px;
 	line-height: 1.45;
-	color: #2c3f51;
+	color: #222;
 	background-color: none
 }
 
@@ -1048,134 +1139,6 @@ li.checklist-item {
 
 li>p:last-child {
 	margin-bottom: 0
-}
-
-[class^="icon-"], [class*=" icon-"] {
-	display: inline-block;
-	line-height: 1.35em;
-	vertical-align: middle;
-	background-repeat: no-repeat
-}
-
-.icon-code {
-	font-size: 83%;
-	line-height: 1.65em
-}
-
-.icon-code:before {
-	margin-left: .1em;
-	margin-right: .6em
-}
-
-.icon-trash {
-	line-height: 1.5em
-}
-
-.icon-folder-open {
-	font-size: 80%
-}
-
-.icon-folder-open:before {
-	margin-right: .6em
-}
-
-.icon-chart-bar {
-	font-size: 95%
-}
-
-.icon-chart-bar:before {
-	margin-left: .3em;
-	margin-right: .3em
-}
-
-.icon-comment-alt, .icon-chat {
-	font-size: 92%
-}
-
-.icon-comment-alt:before, .icon-chat:before {
-	margin-left: .1em;
-	margin-right: .4em
-}
-
-.icon-file {
-	font-size: 104%;
-	margin-left: 0;
-	margin-right: 0
-}
-
-.icon-link {
-	font-size: 104%
-}
-
-[class^="icon-provider-"], [class*=" icon-provider-"] {
-	background-image: url("../img/icons.png");
-	width: 18px;
-	height: 16px;
-	margin-top: -2px;
-	margin-left: 2px
-}
-
-@media only screen and (-webkit-min-device-pixel-ratio:2) , only screen and
-		(min--moz-device-pixel-ratio:2) , only screen and
-		(-o-min-device-pixel-ratio:2/1) , only screen and
-		(min-device-pixel-ratio:2) , only screen and (min-resolution:192dpi) ,
-		only screen and (min-resolution:2dppx) {
-	[class^="icon-provider-"], [class*=" icon-provider-"] {
-		background-image: url("../img/icons2x.png");
-		background-size: 256px 16px
-	}
-}
-
-@media only screen and (-webkit-min-device-pixel-ratio:2) , only screen and
-		(min--moz-device-pixel-ratio:2) , only screen and
-		(-o-min-device-pixel-ratio:2/1) , only screen and
-		(min-device-pixel-ratio:2) , only screen and (min-resolution:192dpi) ,
-		only screen and (min-resolution:2dppx) {
-	[class^="icon-provider-"], [class*=" icon-provider-"] {
-		background-image: url("../img/icons2x.png");
-		background-size: 256px 16px
-	}
-}
-
-.icon-provider-stackedit {
-	background-position: 0 0
-}
-
-.icon-provider-gdrive, .icon-provider-gdrivesec,
-	.icon-provider-gdriveter {
-	background-position: -18px 0
-}
-
-.icon-provider-dropbox {
-	background-position: -37px 0
-}
-
-.icon-provider-github, .icon-provider-gist {
-	background-position: -54px 0
-}
-
-.icon-provider-blogger, .icon-provider-bloggerpage {
-	background-position: -72px 0
-}
-
-.icon-provider-tumblr {
-	background-position: -90px 0
-}
-
-.icon-provider-wordpress {
-	background-position: -108px 0
-}
-
-.icon-provider-ssh {
-	background-position: -126px 0
-}
-
-.icon-provider-gplus {
-	background-position: -144px 0
-}
-
-.icon-provider-couchdb {
-	background-position: -162px 0
 }
 
 body.rtl #wmd-input, body.rtl #preview-contents, body.rtl .input-file-title,
@@ -2529,7 +2492,7 @@ opacity
 }
 
 p strong, li strong {
-	font-family: Consolas, "Helvetica Neue", "楷体", Arial, "STHeiti",
+	font-family: Consolas, "Helvetica Neue", "KaiTi", Arial, "STHeiti",
 		"Microsoft YaHei", "WenQuanYi Micro Hei", SimSun, Song, sans-serif;
 	font-size: 1.2em;
 	text-decoration: underline;
@@ -2539,11 +2502,22 @@ p strong, li strong {
 }
 
 p {
-	font-family: Consolas, "Microsoft YaHei", "宋体";
+	font-family: "Open Sans", "Microsoft YaHei", "宋体";
 }
 
 #MainArticleDiv a {
-	font-weight: bold;
+    font-weight: bold;
+    font-family: Consolas, "Helvetica Neue", "Open Sans", "Microsoft YaHei", 微软雅黑, "Hiragino Sans GB", STHeiti, "WenQuanYi Micro Hei", SimSun, sans-serif;
+    word-break: break-all;
+}
+
+#MainArticleDiv p {
+	font-family: "Helvetica Neue", "Open Sans", "Microsoft YaHei", 微软雅黑, "Hiragino Sans GB", STHeiti, "WenQuanYi Micro Hei", SimSun, sans-serif;
+	font-size: 17px;
+	line-height: 180%;
+	font-weight: normal;
+	color: #2C3842 !important;
+	margin: 0px 0px 30px;
 }
 
 body {
@@ -2748,4 +2722,40 @@ code{
 }
 .waves-block {
   display: block;
+}
+
+/* customerlized color */
+.text-red{
+	color: red !important;
+}
+
+.text-black{
+	color:black !important;
+}
+
+.text-blue{
+	color:#1980e6 !important;
+}
+
+.text-white{
+	color:white !important;
+}
+
+.pure-text{
+	text-decoration: none;
+}
+
+.pure-text:HOVER{
+	text-decoration: none;
+	cursor: default;
+}
+
+.text-bold{
+	font-weight: 700 !important;
+}
+
+/* bootstrap bug fix */
+.list-inline {
+    padding-left: 0;
+    margin-left: 0;
 }
