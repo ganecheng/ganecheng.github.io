@@ -2517,7 +2517,11 @@ p {
 	line-height: 180%;
 	font-weight: normal;
 	color: #2C3842 !important;
-	margin: 0px 0px 30px;
+	margin: 15px 0px;
+}
+
+.page-content {
+	background-color: #fdfdfd !important;  	
 }
 
 body {
