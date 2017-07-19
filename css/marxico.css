@@ -1076,10 +1076,11 @@ table tbody+tbody {
 
 blockquote {
 	border-left-width: 10px;
-	background-color: rgba(102, 128, 153, 0.05);
+	background-color: rgba(102, 128, 153, 0.1);
 	border-top-right-radius: 5px;
 	border-bottom-right-radius: 5px;
-	padding: 15px 20px
+	padding: 15px 20px;
+	border-left: 5px solid #1980e6;
 }
 
 blockquote p {
@@ -2294,25 +2295,6 @@ body.app .preview-container {
 	-webkit-user-select: all
 }
 
-@
--webkit-keyframes img_load { 0%{
-	opacity: .9
-}
-
-100%{
-opacity
-
-
-
-
-:
-
-
-
-
-1
-}
-}
 #settings .col-lg-4 {
 	float: left;
 	text-align: right;
@@ -2495,13 +2477,14 @@ opacity
 }
 
 p strong, li strong {
-	font-family: Consolas, "Helvetica Neue", "KaiTi", Arial, "STHeiti",
-		"Microsoft YaHei", "WenQuanYi Micro Hei", SimSun, Song, sans-serif;
-	font-size: 1.2em;
-	text-decoration: underline;
-	background-color: #f0f0f0;
-	border-radius: 4px;
-	color: black;
+    font-family: "Helvetica Neue", "Open Sans", "Microsoft YaHei", 微软雅黑, "Hiragino Sans GB", STHeiti, "WenQuanYi Micro Hei", SimSun, sans-serif;
+    font-size: 1.2em;
+    text-decoration: underline;
+    background-color: #f0f0f0;
+    border-radius: 4px;
+    color: black;
+    padding-left: 3px;
+    padding-right: 3px;
 }
 
 p {
@@ -2765,4 +2748,44 @@ code{
 .list-inline {
     padding-left: 0;
     margin-left: 0;
+}
+
+
+#MainArticleDiv table {
+    margin: 30px auto;
+    box-shadow: 0 0 5px #ddd;
+    background: white;
+}
+
+#MainArticleDiv p img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 0 5px #aaa;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+@media ( max-width :450px) {
+	.header.navbar .navbar-nav > li.dropdown, .header.navbar .navbar-nav > li.dropdown > a {
+	    padding-left: 0px;
+	    padding-right: 0px;
+	}
+	.navbar-nav>li>a {
+	    padding: 0px 4px !important;
+	}
+	#MainArticleDiv p img,#MainArticleDiv table {
+		margin-left: -10px;
+	    margin-right: -10px;
+	    max-width: calc(100% + 20px);
+	}
+	.hljs {
+	    padding: 0em;
+	    margin-left: -10px;
+	    margin-right: -10px;
+	}
+	pre code, pre.prettyprint code {
+	    padding: 1.3em 1em !important;
+	    max-width: calc(100% + 17px);
+	}
 }
