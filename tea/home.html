@@ -1,0 +1,543 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>西普茗茶</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
+    <link rel="stylesheet" href="css/weui.css"/>
+    <link rel="stylesheet" href="css/weui2.css"/>
+    <link rel="stylesheet" href="css/weui3.css"/>
+    <script src="js/zepto.min.js"></script>
+    <script src="js/php.js"></script>
+    <script src="js/swipe.js"></script>
+</head>
+
+<body ontouchstart class="page-bg" style="max-width: 640px;margin: 0 auto;">
+<div class="searchbar_wrap">
+</div>
+<div class="slide" id="slide1">
+    <ul>
+        <li>
+            <a href="#">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAANSURBVBhXYzh8+PB/AAffA0nNPuCLAAAAAElFTkSuQmCC"
+                     data-src="./images/tea_img_1.jpg" alt="">
+            </a>
+            <div class="slide-desc">大益茶茶叶</div>
+        </li>
+        <li>
+            <a href="#">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAANSURBVBhXYzh8+PB/AAffA0nNPuCLAAAAAElFTkSuQmCC"
+                     data-src="./images/tea_img_2.jpg" alt="">
+            </a>
+            <div class="slide-desc">益然公益</div>
+        </li>
+        <li>
+            <a href="#">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAANSURBVBhXYzh8+PB/AAffA0nNPuCLAAAAAElFTkSuQmCC"
+                     data-src="./images/tea_img_3.jpg" alt="">
+            </a>
+            <div class="slide-desc">西普茗茶</div>
+        </li>
+    </ul>
+    <div class="dot">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+</div>
+<div class="weui_grids grids-small">
+    <a href="javascript:;" class="grid">
+        <div class="weui_grid_icon">
+            <img src="http://www.donghetea.com/mobile/themes/dhtea/images/n1.png" alt="">
+        </div>
+        <p class="weui_grid_label">
+            茶叶指数
+        </p>
+    </a>
+    <a href="javascript:;" class="grid">
+        <div class="weui_grid_icon">
+            <img src="http://www.donghetea.com/mobile/themes/dhtea/images/n2.png" alt="">
+        </div>
+        <p class="weui_grid_label">
+            新品茶叶
+        </p>
+    </a>
+    <a href="javascript:;" class="grid">
+        <div class="weui_grid_icon">
+            <img src="http://www.donghetea.com/mobile/themes/dhtea/images/n6.png" alt="">
+        </div>
+        <p class="weui_grid_label">
+            红茶绿茶
+        </p>
+    </a>
+    <a href="javascript:;" class="grid">
+        <div class="weui_grid_icon">
+            <img src="http://www.donghetea.com/mobile/themes/dhtea/images/n7.png" alt="">
+        </div>
+        <p class="weui_grid_label">
+            其他茶系
+        </p>
+    </a>
+</div>
+<br>
+<div class="weui_panel weui_panel_access">
+    <div class="weui_panel_hd"><h2>指数信息</h2></div>
+    <div class="weui_panel_bd">
+
+        <table class="weui-table weui-border-tb">
+            <thead>
+            <tr>
+                <th>品名</th>
+                <th>参考价</th>
+                <th>升跌</th>
+                <th>升跌幅</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>1501 云起</td>
+                <td>¥66000</td>
+                <td>升¥1000</td>
+                <td class="f-red"><strong>↑ 1.50%</strong></td>
+            </tr>
+            <tr>
+                <td>701 味最酽普饼</td>
+                <td>￥7000</td>
+                <td>升￥400</td>
+                <td class="f-red"><strong>↑ 6.10%</strong></td>
+            </tr>
+            <tr>
+                <td>1602 八级普饼</td>
+                <td>￥2000</td>
+                <td>升￥100</td>
+                <td class="f-red"><strong>↑ 5.30%</strong></td>
+            </tr>
+            <tr>
+                <td>1401 马中和韵</td>
+                <td>¥28000</td>
+                <td>升￥2500</td>
+                <td class="f-red"><strong>↑ 9.80%</strong></td>
+            </tr>
+
+            <tr>
+                <td>801 勐宋孔雀</td>
+                <td>¥40000</td>
+                <td>降￥1000</td>
+                <td class="f-green">↓ 2.40%</td>
+            </tr>
+            <tr>
+                <td>1601 陈香厚韵</td>
+                <td>￥1880</td>
+                <td>降¥120</td>
+                <td class="f-green">↓ 6%</td>
+            </tr>
+            <tr>
+                <td>1601 甲级沱</td>
+                <td>¥1350</td>
+                <td>升￥200</td>
+                <td class="f-red"><strong>↑ 17.40%</strong></td>
+            </tr>
+            <tr>
+                <td>1801 益原素</td>
+                <td>¥6300</td>
+                <td>升¥100</td>
+                <td class="f-red"><strong>↑ 1.60%</strong></td>
+            </tr>
+            <tr>
+                <td>1801 吾心光明</td>
+                <td>￥14300</td>
+                <td>降￥200</td>
+                <td class="f-green">↓ 1.40%</td>
+            </tr>
+            <tr>
+                <td>1801 红韵圆茶</td>
+                <td>￥850</td>
+                <td>降￥50</td>
+                <td class="f-green">↓ 5.60%</td>
+            </tr>
+            <tr>
+                <td>1701 星耀亚洲（熟）</td>
+                <td>¥4650</td>
+                <td>降¥50</td>
+                <td class="f-green">↓ 1.10%</td>
+            </tr>
+            <tr>
+                <td>1801 黄金甲</td>
+                <td>¥10800</td>
+                <td>升￥100</td>
+                <td class="f-red"><strong>↑ 0.9%</strong></td>
+            </tr>
+            <tr>
+                <td>1801 0562</td>
+                <td>¥2250</td>
+                <td>降¥200</td>
+                <td class="f-green">↓ 8.2%</td>
+            </tr>
+            <tr>
+                <td>1801 7572</td>
+                <td>¥3380</td>
+                <td>降¥120</td>
+                <td class="f-green">↓ 3.40%</td>
+            </tr>
+
+            </tbody>
+        </table>
+    </div>
+    <a class="weui_panel_ft" href="javascript:void(0);">查看更多</a>
+</div>
+<br>
+<div class="weui_panel weui_panel_access">
+    <div class="weui_panel_hd"><h2>新品茶叶</h2></div>
+    <div class="weui_panel_bd">
+        <a href="javascript:void(0);" class="weui_media_box weui_media_appmsg">
+            <div class="weui_media_hd">
+                <img class="weui_media_appmsg_thumb"
+                     src="./images/goods_pic_1.jpg"
+                     alt="">
+            </div>
+            <div class="weui_media_bd">
+                <h4 class="weui_media_title">红茶</h4>
+                <p class="weui_media_desc">以适宜的茶树新牙叶为原料，经萎凋、揉捻（切）、发酵、干燥等一系列工艺过程精制而成的茶。</p>
+            </div>
+        </a>
+        <a href="javascript:void(0);" class="weui_media_box weui_media_appmsg">
+            <div class="weui_media_hd">
+                <img class="weui_media_appmsg_thumb"
+                     src="./images/goods_pic_2.jpg"
+                     alt="">
+            </div>
+            <div class="weui_media_bd">
+                <h4 class="weui_media_title">安吉白茶</h4>
+                <p class="weui_media_desc">安吉白茶外形挺直略扁，形如兰蕙；色泽翠绿，白毫显露；叶芽如金镶碧鞘，内裹银箭，十分可人。冲泡后，清香高扬且持久。滋味鲜爽，饮毕，唇齿留香，回味甘而生津。</p>
+            </div>
+        </a>
+        <a href="javascript:void(0);" class="weui_media_box weui_media_appmsg">
+            <div class="weui_media_hd">
+                <img class="weui_media_appmsg_thumb"
+                     src="./images/goods_pic_3.jpg"
+                     alt="">
+            </div>
+            <div class="weui_media_bd">
+                <h4 class="weui_media_title">极品金骏眉</h4>
+                <p class="weui_media_desc">600/斤，摘于武夷山国家级自然保护区内海拔1200—1800米高山的原生态野茶树，6至8万颗芽尖方制成一斤金骏眉。</p>
+            </div>
+        </a>
+        <a href="javascript:void(0);" class="weui_media_box weui_media_appmsg">
+            <div class="weui_media_hd">
+                <img class="weui_media_appmsg_thumb"
+                     src="./images/tea_img_1.jpg"
+                     alt="">
+            </div>
+            <div class="weui_media_bd">
+                <h4 class="weui_media_title">一杯香</h4>
+                <p class="weui_media_desc">正宗明前绿茶2018新茶云雾绿茶4盒共500克 一杯香茶叶绿茶春茶新茶毛尖散装礼盒日照茶茗茶浓香型</p>
+            </div>
+        </a>
+        <a href="javascript:void(0);" class="weui_media_box weui_media_appmsg">
+            <div class="weui_media_hd">
+                <img class="weui_media_appmsg_thumb"
+                     src="./images/tea_img_2.jpg"
+                     alt="">
+            </div>
+            <div class="weui_media_bd">
+                <h4 class="weui_media_title">信阳毛尖</h4>
+                <p class="weui_media_desc">乐品乐茶 2018新茶 茶叶 绿茶 信阳原产毛尖 雨前春茶125g*2罐</p>
+            </div>
+        </a>
+        <a href="javascript:void(0);" class="weui_media_box weui_media_appmsg">
+            <div class="weui_media_hd">
+                <img class="weui_media_appmsg_thumb"
+                     src="./images/tea_img_3.jpg"
+                     alt="">
+            </div>
+            <div class="weui_media_bd">
+                <h4 class="weui_media_title">碧螺春</h4>
+                <p class="weui_media_desc">碧螺春 云雾 绿茶 2018新茶 罐装明前新茶春茶茶叶礼盒装</p>
+            </div>
+        </a>
+        <a href="javascript:void(0);" class="weui_media_box weui_media_appmsg">
+            <div class="weui_media_hd">
+                <img class="weui_media_appmsg_thumb"
+                     src="./images/tea_img_4.jpg"
+                     alt="">
+            </div>
+            <div class="weui_media_bd">
+                <h4 class="weui_media_title">雀舌</h4>
+                <p class="weui_media_desc">乐品乐茶 2018新茶 茶叶 绿茶 雀舌茶 明前春茶嫩芽茶100g*1罐</p>
+            </div>
+        </a>
+    </div>
+    <a class="weui_panel_ft" href="javascript:void(0);">查看更多</a>
+</div>
+<br>
+
+<div class="weui_panel weui_panel_access">
+    <div class="weui_panel_hd"><h2>红茶绿茶</h2></div>
+    <div class="weui_panel_bd">
+        <a href="javascript:void(0);" class="weui_media_box weui_media_appmsg">
+            <div class="weui_media_hd">
+                <img class="weui_media_appmsg_thumb"
+                     src="./images/goods_pic_1.jpg"
+                     alt="">
+            </div>
+            <div class="weui_media_bd">
+                <h4 class="weui_media_title">红茶</h4>
+                <p class="weui_media_desc">以适宜的茶树新牙叶为原料，经萎凋、揉捻（切）、发酵、干燥等一系列工艺过程精制而成的茶。</p>
+            </div>
+        </a>
+        <a href="javascript:void(0);" class="weui_media_box weui_media_appmsg">
+            <div class="weui_media_hd">
+                <img class="weui_media_appmsg_thumb"
+                     src="./images/goods_pic_2.jpg"
+                     alt="">
+            </div>
+            <div class="weui_media_bd">
+                <h4 class="weui_media_title">安吉白茶</h4>
+                <p class="weui_media_desc">安吉白茶外形挺直略扁，形如兰蕙；色泽翠绿，白毫显露；叶芽如金镶碧鞘，内裹银箭，十分可人。冲泡后，清香高扬且持久。滋味鲜爽，饮毕，唇齿留香，回味甘而生津。</p>
+            </div>
+        </a>
+        <a href="javascript:void(0);" class="weui_media_box weui_media_appmsg">
+            <div class="weui_media_hd">
+                <img class="weui_media_appmsg_thumb"
+                     src="./images/goods_pic_3.jpg"
+                     alt="">
+            </div>
+            <div class="weui_media_bd">
+                <h4 class="weui_media_title">极品金骏眉</h4>
+                <p class="weui_media_desc">600/斤，摘于武夷山国家级自然保护区内海拔1200—1800米高山的原生态野茶树，6至8万颗芽尖方制成一斤金骏眉。</p>
+            </div>
+        </a>
+        <a href="javascript:void(0);" class="weui_media_box weui_media_appmsg">
+            <div class="weui_media_hd">
+                <img class="weui_media_appmsg_thumb"
+                     src="./images/tea_img_1.jpg"
+                     alt="">
+            </div>
+            <div class="weui_media_bd">
+                <h4 class="weui_media_title">一杯香</h4>
+                <p class="weui_media_desc">正宗明前绿茶2018新茶云雾绿茶4盒共500克 一杯香茶叶绿茶春茶新茶毛尖散装礼盒日照茶茗茶浓香型</p>
+            </div>
+        </a>
+        <a href="javascript:void(0);" class="weui_media_box weui_media_appmsg">
+            <div class="weui_media_hd">
+                <img class="weui_media_appmsg_thumb"
+                     src="./images/tea_img_2.jpg"
+                     alt="">
+            </div>
+            <div class="weui_media_bd">
+                <h4 class="weui_media_title">信阳毛尖</h4>
+                <p class="weui_media_desc">乐品乐茶 2018新茶 茶叶 绿茶 信阳原产毛尖 雨前春茶125g*2罐</p>
+            </div>
+        </a>
+        <a href="javascript:void(0);" class="weui_media_box weui_media_appmsg">
+            <div class="weui_media_hd">
+                <img class="weui_media_appmsg_thumb"
+                     src="./images/tea_img_3.jpg"
+                     alt="">
+            </div>
+            <div class="weui_media_bd">
+                <h4 class="weui_media_title">碧螺春</h4>
+                <p class="weui_media_desc">碧螺春 云雾 绿茶 2018新茶 罐装明前新茶春茶茶叶礼盒装</p>
+            </div>
+        </a>
+        <a href="javascript:void(0);" class="weui_media_box weui_media_appmsg">
+            <div class="weui_media_hd">
+                <img class="weui_media_appmsg_thumb"
+                     src="./images/tea_img_4.jpg"
+                     alt="">
+            </div>
+            <div class="weui_media_bd">
+                <h4 class="weui_media_title">雀舌</h4>
+                <p class="weui_media_desc">乐品乐茶 2018新茶 茶叶 绿茶 雀舌茶 明前春茶嫩芽茶100g*1罐</p>
+            </div>
+        </a>
+    </div>
+    <a class="weui_panel_ft" href="javascript:void(0);">查看更多</a>
+</div>
+<br>
+
+<div class="weui_panel weui_panel_access">
+    <div class="weui_panel_hd"><h2>其他茶系</h2></div>
+    <div class="weui_panel_bd">
+        <a href="javascript:void(0);" class="weui_media_box weui_media_appmsg">
+            <div class="weui_media_hd">
+                <img class="weui_media_appmsg_thumb"
+                     src="./images/goods_pic_1.jpg"
+                     alt="">
+            </div>
+            <div class="weui_media_bd">
+                <h4 class="weui_media_title">红茶</h4>
+                <p class="weui_media_desc">以适宜的茶树新牙叶为原料，经萎凋、揉捻（切）、发酵、干燥等一系列工艺过程精制而成的茶。</p>
+            </div>
+        </a>
+        <a href="javascript:void(0);" class="weui_media_box weui_media_appmsg">
+            <div class="weui_media_hd">
+                <img class="weui_media_appmsg_thumb"
+                     src="./images/goods_pic_2.jpg"
+                     alt="">
+            </div>
+            <div class="weui_media_bd">
+                <h4 class="weui_media_title">安吉白茶</h4>
+                <p class="weui_media_desc">安吉白茶外形挺直略扁，形如兰蕙；色泽翠绿，白毫显露；叶芽如金镶碧鞘，内裹银箭，十分可人。冲泡后，清香高扬且持久。滋味鲜爽，饮毕，唇齿留香，回味甘而生津。</p>
+            </div>
+        </a>
+        <a href="javascript:void(0);" class="weui_media_box weui_media_appmsg">
+            <div class="weui_media_hd">
+                <img class="weui_media_appmsg_thumb"
+                     src="./images/goods_pic_3.jpg"
+                     alt="">
+            </div>
+            <div class="weui_media_bd">
+                <h4 class="weui_media_title">极品金骏眉</h4>
+                <p class="weui_media_desc">600/斤，摘于武夷山国家级自然保护区内海拔1200—1800米高山的原生态野茶树，6至8万颗芽尖方制成一斤金骏眉。</p>
+            </div>
+        </a>
+        <a href="javascript:void(0);" class="weui_media_box weui_media_appmsg">
+            <div class="weui_media_hd">
+                <img class="weui_media_appmsg_thumb"
+                     src="./images/tea_img_1.jpg"
+                     alt="">
+            </div>
+            <div class="weui_media_bd">
+                <h4 class="weui_media_title">一杯香</h4>
+                <p class="weui_media_desc">正宗明前绿茶2018新茶云雾绿茶4盒共500克 一杯香茶叶绿茶春茶新茶毛尖散装礼盒日照茶茗茶浓香型</p>
+            </div>
+        </a>
+        <a href="javascript:void(0);" class="weui_media_box weui_media_appmsg">
+            <div class="weui_media_hd">
+                <img class="weui_media_appmsg_thumb"
+                     src="./images/tea_img_2.jpg"
+                     alt="">
+            </div>
+            <div class="weui_media_bd">
+                <h4 class="weui_media_title">信阳毛尖</h4>
+                <p class="weui_media_desc">乐品乐茶 2018新茶 茶叶 绿茶 信阳原产毛尖 雨前春茶125g*2罐</p>
+            </div>
+        </a>
+        <a href="javascript:void(0);" class="weui_media_box weui_media_appmsg">
+            <div class="weui_media_hd">
+                <img class="weui_media_appmsg_thumb"
+                     src="./images/tea_img_3.jpg"
+                     alt="">
+            </div>
+            <div class="weui_media_bd">
+                <h4 class="weui_media_title">碧螺春</h4>
+                <p class="weui_media_desc">碧螺春 云雾 绿茶 2018新茶 罐装明前新茶春茶茶叶礼盒装</p>
+            </div>
+        </a>
+        <a href="javascript:void(0);" class="weui_media_box weui_media_appmsg">
+            <div class="weui_media_hd">
+                <img class="weui_media_appmsg_thumb"
+                     src="./images/tea_img_4.jpg"
+                     alt="">
+            </div>
+            <div class="weui_media_bd">
+                <h4 class="weui_media_title">雀舌</h4>
+                <p class="weui_media_desc">乐品乐茶 2018新茶 茶叶 绿茶 雀舌茶 明前春茶嫩芽茶100g*1罐</p>
+            </div>
+        </a>
+    </div>
+    <a class="weui_panel_ft" href="javascript:void(0);">查看更多</a>
+</div>
+<br>
+<br>
+<div class="weui-footer">
+    <p class="weui-footer-links">
+        <a href="javascript:void(0);" class="weui-footer-link">服务协议</a>
+        <a href="javascript:void(0);" class="weui-footer-link">使用说明</a>
+    </p>
+    <p class="weui-footer-text">Copyright &copy; 2018 西普茗茶</p>
+</div>
+
+<div class="weui_cells_title" style="height:45px;">&nbsp;</div>
+<div class="weui_tab tab-bottom" style="height: 55px;max-width: 640px;margin: 0 auto;">
+    <div class="weui_tabbar ">
+        <a href="javascript:;" class="weui_tabbar_item weui_bar_item_on">
+            <div class="weui_tabbar_icon">
+                <img src="http://www.donghetea.com/mobile/themes/dhtea/images/n0.png" alt="">
+            </div>
+            <p class="weui_tabbar_label">首页</p>
+        </a>
+        <a href="javascript:;" class="weui_tabbar_item">
+            <div class="weui_tabbar_icon">
+                <img src="images/icon_nav_article.png" alt="">
+            </div>
+            <p class="weui_tabbar_label">分类</p>
+        </a>
+        <a href="javascript:;" class="weui_tabbar_item">
+            <div class="weui_tabbar_icon">
+                <img src="http://www.donghetea.com/mobile/themes/dhtea/images/n3.png" alt="">
+            </div>
+            <p class="weui_tabbar_label">购物车</p>
+        </a>
+        <a href="javascript:;" class="weui_tabbar_item">
+            <div class="weui_tabbar_icon">
+                <img src="http://www.donghetea.com/mobile/themes/dhtea/images/n5.png" alt="">
+            </div>
+            <p class="weui_tabbar_label">个人中心</p>
+        </a>
+    </div>
+</div>
+
+<script type="application/javascript">
+    $(function ()
+    {
+        $('.searchbar_wrap').searchBar({
+            cancelText: "取消",
+            searchText: '搜索你要找的茶叶',
+            onfocus: function (value)
+            {
+
+            },
+            onblur: function (value)
+            {
+
+            },
+            oninput: function (value)
+            {
+
+            },
+            onsubmit: function (value)
+            {
+            },
+            oncancel: function ()
+            {
+
+            },
+
+            onclear: function ()
+            {
+
+            }
+        });
+        $('#slide1').swipeSlide({
+            autoSwipe: true,//自动切换默认是
+            speed: 3000,//速度默认4000
+            continuousScroll: true,//默认否
+            transitionType: 'cubic-bezier(0.22, 0.69, 0.72, 0.88)',//过渡动画linear/ease/ease-in/ease-out/ease-in-out/cubic-bezier
+            lazyLoad: true,//懒加载默认否
+            firstCallback: function (i, sum, me)
+            {
+                me.find('.dot').children().first().addClass('cur');
+            },
+            callback: function (i, sum, me)
+            {
+                me.find('.dot').children().eq(i).addClass('cur').siblings().removeClass('cur');
+            }
+        });
+
+        $('.weui_tab').tab({
+            defaultIndex: 0,
+            activeClass: 'weui_bar_item_on',
+            onToggle: function (index)
+            {
+                if (index > 0)
+                {
+                    alert(index)
+                }
+            }
+        });
+    });
+</script>
+</body>
+</html>
